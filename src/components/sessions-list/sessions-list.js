@@ -1,19 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-export default function SessionsList(props) {
+export function SessionsList(props) {
   
-  const sessions = [
-    {day: 'Thursday', timeStart: '10:00', timeEnd: '12:00', location: 'Coffee Shop'},
-    { day: 'Tuesday', timeStart: '13:00', timeEnd: '15:00', location: 'Coffee Shop' },
-    { day: 'Whursday', timeStart: '19:00', timeEnd: '21:00', location: 'Coffee Shop' }
-  ];
+  // const sessions = [
+  //   {day: 'Thursday', timeStart: '10:00', timeEnd: '12:00', location: 'Coffee Shop'},
+  //   { day: 'Tuesday', timeStart: '13:00', timeEnd: '15:00', location: 'Coffee Shop' },
+  //   { day: 'Whursday', timeStart: '19:00', timeEnd: '21:00', location: 'Coffee Shop' }
+  // ];
 
-  const list = sessions.map((session, index) => {
-    return (<li key={index} className='session-list-item'>
+  const list = props.sessions.map((session, index) => {
+    return (
+      <li key={index} className='session-list-item'>
+        <a href='#'>
               <p>{session.day} / {session.timeStart} - {session.timeEnd} </p>
               <p>{session.location}</p>
-            </li>
+        </a>        
+      </li>
     );
   });
 
@@ -26,3 +29,12 @@ export default function SessionsList(props) {
   </div>  
   );
 }
+
+const mapStateToProps = (state) => {
+  console.log('state.session', state.session);
+  return ({
+    sessions: state.session.sessions
+  });
+}
+
+export default connect(mapStateToProps)(SessionsList);
