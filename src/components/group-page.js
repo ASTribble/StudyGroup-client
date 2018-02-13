@@ -9,7 +9,7 @@ import {getSessions} from '../actions/sessions';
 
 
 
-export class Group extends React.Component{
+export class GroupPage extends React.Component{
 
     componentDidMount(){
       console.log('component did mount');
@@ -40,4 +40,4 @@ export class Group extends React.Component{
 const mapStateToProps = (state) => ({
   loading: state.session.loading
 })
-export default connect(mapStateToProps)(Group)
+export default connect(mapStateToProps)(GroupPage)

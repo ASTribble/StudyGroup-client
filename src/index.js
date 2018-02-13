@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import {Provider} from 'react-redux';
 
 import store from './store';
-import Group from './components/group';
+import GroupPage from './components/group-page';
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -12,7 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Group />
+      <GroupPage />
     </Router>
   </Provider>, 
   document.getElementById('root')
