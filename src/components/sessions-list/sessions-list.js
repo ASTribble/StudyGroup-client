@@ -1,18 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
+import {getSessionById} from '../../actions/sessions'
 
 export function SessionsList(props) {
   console.log('props.sessions in list:', props.sessions)
-  // const sessions = [
-  //   {day: 'Thursday', timeStart: '10:00', timeEnd: '12:00', location: 'Coffee Shop'},
-  //   { day: 'Tuesday', timeStart: '13:00', timeEnd: '15:00', location: 'Coffee Shop' },
-  //   { day: 'Whursday', timeStart: '19:00', timeEnd: '21:00', location: 'Coffee Shop' }
-  // ];
+ 
 
-  const list = props.sessions.map((session, index) => {
+  const list = props.sessions.map((session) => {
     return (
-      <li key={index} className='session-list-item'>
+      <li key={session.id} className='session-list-item' id={session.id} onClick={()=> props.dispatch(getSessionById(session.id))}>
       {/* <Link to={`/${props.folderID}/${email.id}`}>{email.title}</Link> */}
       <Link to={`/${session.id}`}>
               <p>{session.date} / {session.startTime} - {session.endTime} </p>
