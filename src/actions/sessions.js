@@ -19,8 +19,13 @@ export const sessionError = () => ({
 
 export const getSessions = () => dispatch => {
   dispatch(sessionRequest());
-  return fetch(`${API_BASE_URL}/studyGroup`)
-    .then(res => res.json())
+  return fetch(`${API_BASE_URL}/sessions`)
+    .then(res => {
+      if(!res.ok){
+        return new Promise.reject(res)
+      }
+      return res.json()
+    })
     .then(res => dispatch(sessionSuccess(res)))
-    .catch(err=> console.log(err));
+    .catch(err=> dispatch(sessionError(err)));
 };

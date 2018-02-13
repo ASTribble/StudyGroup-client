@@ -7,8 +7,16 @@ import {
 
 const initialState = {
   loading: false,
+  error: null,
   sessions: [],
-  error: null
+  detailedSession: {
+    date: 'Tuesday, 24 February',
+    startTime: '5pm',
+    endTime: '6pm',
+    location: 'Coffee Shop',
+    notes: ['meeting in back room', 'bring crayons'],
+    attendees: ['sarah', 'timmy', 'joe']
+  }
 }
 
 export default function sessionReducer(state = initialState, action){
