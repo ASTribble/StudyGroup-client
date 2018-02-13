@@ -15,7 +15,7 @@ export function SessionsList(props) {
       <li key={index} className='session-list-item'>
       {/* <Link to={`/${props.folderID}/${email.id}`}>{email.title}</Link> */}
         <a href='#'>
-              <p>{session.day} / {session.timeStart} - {session.timeEnd} </p>
+              <p>{session.date} / {session.startTime} - {session.endTime} </p>
               <p>{session.location}</p>
         </a>        
       </li>
