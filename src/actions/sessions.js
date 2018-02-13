@@ -18,7 +18,7 @@ export const sessionError = () => ({
 
 export const getSessions = () => dispatch => {
   dispatch(sessionRequest());
-  return fetch("http://localhost:8080/studyGroup")
+  return fetch('http://localhost:8080/studyGroup')
     .then(res => res.json())
     .then(res => dispatch(sessionSuccess(res)))
     .catch(err=> console.log(err));
