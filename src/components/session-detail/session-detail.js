@@ -5,7 +5,7 @@ import SessionNotes from './session-notes';
 import NameList from './name-list';
 
 export function SessionDetail(props){
-
+    console.log('session detail props:', props);
     return (
         <div>
             <header>

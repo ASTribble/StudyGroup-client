@@ -1,10 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Route} from 'react-router-dom';
 
 import SessionForm from './session-form/session-form';
 import SessionsList from './sessions-list/sessions-list';
 import LocationsBar from './locations-bar/locations-bar';
-
 import {getSessions} from '../actions/sessions';
 
 
@@ -25,6 +25,7 @@ export class GroupPage extends React.Component{
         <div>  
           <header>
             <h1>Study Group</h1>
+            <h2>Group Name</h2>
           </header>
           {loading}
           <main>

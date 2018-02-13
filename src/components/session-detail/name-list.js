@@ -13,8 +13,8 @@ export function NameList (props){
             <ul className='name-list'>
                 {nameList}
             </ul>  
-
-            <form id='add-name-form' onSubmit={e=>props.handleSubmit(console.log(e.values))}>
+            {/* onSubmit={this.props.handleSubmit(values => this.onSubmit(values))} */}
+            <form id='add-name-form' onSubmit={props.handleSubmit(values => console.log(values))}>
                 <label htmlFor='session-name-input'>Are you going?</label>
                 <Field
                     component='input'
