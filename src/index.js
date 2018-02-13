@@ -5,7 +5,6 @@ import {Provider} from 'react-redux';
 
 import store from './store';
 import App from './components/app/app';
-import SessionDetail from './components/session-detail/session-detail'
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';

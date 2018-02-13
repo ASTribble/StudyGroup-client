@@ -27,9 +27,11 @@ export default function sessionReducer(state = initialState, action){
         error: null
       });
     case SESSION_SUCCESS:
+      console.log('action.sessions[0] in reducer', action.sessions[0]);
       return Object.assign ({}, state, {
         loading: false,
-        sessions: action.sessions
+        sessions: action.sessions,
+        detailedSession: {...action.sessions[0]}
       });
     case SESSION_ERROR:
       return Object.assign ({}, state, {
@@ -38,5 +40,5 @@ export default function sessionReducer(state = initialState, action){
       });
     default:
       return state;
-  };        
+  }       
 }

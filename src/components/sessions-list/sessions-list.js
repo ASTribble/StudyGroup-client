@@ -14,10 +14,10 @@ export function SessionsList(props) {
     return (
       <li key={index} className='session-list-item'>
       {/* <Link to={`/${props.folderID}/${email.id}`}>{email.title}</Link> */}
-        <a href='#'>
+      <Link to={`/${session.id}`}>
               <p>{session.date} / {session.startTime} - {session.endTime} </p>
               <p>{session.location}</p>
-        </a>        
+      </Link>       
       </li>
     );
   });
@@ -33,7 +33,7 @@ export function SessionsList(props) {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state.session', state.session);
+  console.log('state in sessionsList', state);
   return ({
     sessions: state.session.sessions
   });

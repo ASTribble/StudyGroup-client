@@ -14,8 +14,11 @@ export function SessionNotes (props){
     );
 };
 
-const mapStateToProps = state => ({
-    notes: state.session.detailedSession.notes
-});
+const mapStateToProps = state => {
+    console.log(state.session.detailedSession);
+    return({
+        notes: state.session.detailedSession.notes
+    });    
+};
 
 export default connect(mapStateToProps)(SessionNotes)

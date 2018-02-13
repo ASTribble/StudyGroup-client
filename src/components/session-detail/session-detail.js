@@ -23,6 +23,7 @@ export function SessionDetail(props){
 }
 
 const mapStateToProps = state => {
+    console.log('state in SessionDetail is:', state);
     return ({
         session: state.session.detailedSession
     })
