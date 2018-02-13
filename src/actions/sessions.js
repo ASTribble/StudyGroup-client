@@ -1,3 +1,4 @@
+import {API_BASE_URL} from '../config'; 
 
 export const SESSION_REQUEST = 'SESSION_REQUEST';
 export const sessionRequest = () => ({
@@ -18,7 +19,7 @@ export const sessionError = () => ({
 
 export const getSessions = () => dispatch => {
   dispatch(sessionRequest());
-  return fetch('http://localhost:8080/studyGroup')
+  return fetch(API_BASE_URL)
     .then(res => res.json())
     .then(res => dispatch(sessionSuccess(res)))
     .catch(err=> console.log(err));
