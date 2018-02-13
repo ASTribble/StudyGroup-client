@@ -2,10 +2,10 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route} from 'react-router-dom';
 
-import SessionForm from './session-form/session-form';
-import SessionsList from './sessions-list/sessions-list';
-import LocationsBar from './locations-bar/locations-bar';
-import {getSessions} from '../actions/sessions';
+import SessionForm from '../session-form/session-form';
+import SessionsList from '../sessions-list/sessions-list';
+import LocationsBar from '../locations-bar/locations-bar';
+import {getSessions} from '../../actions/sessions';
 
 
 
