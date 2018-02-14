@@ -34,7 +34,6 @@ export const addSession = (values) => dispatch => {
           }
           return res.json()
       })
-        // .then(res => dispatch(addSessionSuccess(res)))
         .then(res => dispatch(getSessions()))
         .catch(err=> dispatch(sessionError(err)));
   };

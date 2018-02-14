@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxForm} from 'redux-form';
+import AddNameForm from './add-name-form';
 
 export function NameList (props){
 
@@ -13,19 +14,7 @@ export function NameList (props){
             <ul className='name-list'>
                 {nameList}
             </ul>  
-            {/* onSubmit={this.props.handleSubmit(values => this.onSubmit(values))} */}
-            <form id='add-name-form' onSubmit={props.handleSubmit(values => console.log(values))}>
-                <label htmlFor='session-name-input'>Are you going?</label>
-                <Field
-                    component='input'
-                    type='text'
-                    name='session-name-input' 
-                    id='session-name-input'
-                />
-                <button id='add-name-button'>
-                    Going!
-                </button>
-            </form> 
+            <AddNameForm />
         </div>   
     );
 };
@@ -34,6 +23,4 @@ const mapStateToProps = state => ({
     names: state.session.detailedSession.attendees
 });
 
-export default reduxForm({
-    form:'addName'
-})(connect(mapStateToProps)(NameList));
+export default connect(mapStateToProps)(NameList);
