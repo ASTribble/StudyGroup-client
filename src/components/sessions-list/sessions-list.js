@@ -9,9 +9,10 @@ export function SessionsList(props) {
 
   const list = props.sessions.map((session) => {
     return (
-      <li key={session.id} className='session-list-item' id={session.id} onClick={()=> props.dispatch(getSessionById(session.id))}>
+      <li key={session.id} className='session-list-item' id={session.id} >
+      {/* onClick={()=> props.dispatch(getSessionById(session.id) */}
       {/* <Link to={`/${props.folderID}/${email.id}`}>{email.title}</Link> */}
-      <Link to={`/${session.id}`}>
+      <Link to={`/sessions/${session.id}`}>
               <p>{session.date} / {session.startTime} - {session.endTime} </p>
               <p>{session.location}</p>
       </Link>       

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import {Route, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import GroupPage from '../group-page/group-page';
 import SessionDetail from '../session-detail/session-detail';
@@ -12,9 +12,11 @@ import SessionDetail from '../session-detail/session-detail';
 export function App (props){
 
       return (
-        <div> 
-          <Route exact path='/' component={GroupPage}/>
-          <Route exact path='/:sessionID' component={SessionDetail}/>
+        <div>
+          <Switch>   
+            <Route exact path='/studyGroup' component={GroupPage}/>
+            <Route exact path='/sessions/:sessionID' component={SessionDetail}/>
+            </Switch>
         </div>  
       );
 }
