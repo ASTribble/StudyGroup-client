@@ -13,9 +13,9 @@ export function App (props){
 
       return (
         <div>
-          <Redirect from='/' to='/studyGroup'/>
+            {/* <Redirect exact from='/' to='/studyGroup'/> */}
           <Switch> 
-            <Route exact path='/studyGroup' component={GroupPage}/>
+            <Route exact path='/' component={GroupPage}/>
             <Route exact path='/sessions/:sessionID' component={SessionDetail}/>
           </Switch>
         </div>  
