@@ -4,11 +4,12 @@ import {connect} from 'react-redux';
 import SessionForm from '../session-form/session-form';
 import SessionsList from '../sessions-list/sessions-list';
 import LocationsBar from '../locations-bar/locations-bar';
-import {getSessions} from '../../actions/sessions';
+import {getSessions} from '../../actions/get-sessions';
 
 
 
 export class GroupPage extends React.Component{
+
 
     componentDidMount(){
       console.log('component did mount');

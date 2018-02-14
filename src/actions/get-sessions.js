@@ -23,6 +23,7 @@ export const sessionError = () => ({
 });
 
 
+
 export const getSessions = () => dispatch => {
   dispatch(sessionRequest());
   return fetch(`${API_BASE_URL}/sessions`)
@@ -48,5 +49,4 @@ export const getSessionById = (id) => dispatch => {
     .then(res => dispatch(singleSessionSuccess(res)))
     .catch(err=> dispatch(sessionError(err)));
 };
-
 

@@ -3,14 +3,22 @@ import {
   SESSION_SUCCESS,
   SINGLE_SESSION_SUCCESS,
   SESSION_ERROR
-} from '../actions/sessions';
+} from '../actions/get-sessions';
 
 
 const initialState = {
   loading: false,
   error: null,
   sessions: [],
-  detailedSession: {}
+  detailedSession: {
+    title: 'hardcoded session',
+    date: '20 Feb',
+    startTime: '3pm',
+    endTime: '5pm',
+    location: 'Cafe',
+    notes:['get some coffee', 'meet downstairs'],
+    attendees: ['Gordon', 'Lilly']
+  }
 }
 
 export default function sessionReducer(state = initialState, action){

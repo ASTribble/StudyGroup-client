@@ -2,12 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Input from './input';
 import {Field, reduxForm, focus } from 'redux-form';
+import {addSession} from '../../actions/add-session';
 
 
 export class SessionForm extends React.Component {
   
   onSubmit(values){
     console.log(values);
+    // addSessionAPI(values);
   }
 
   render(){
@@ -45,19 +47,19 @@ export class SessionForm extends React.Component {
           component={Input}
           element='input'
           type='text'
-          name='start-time'
+          name='start'
           id='start-time'
           validate={[]}
           label='Start Time'
         />
 
-        <Field
+        {/* <Field
           component={Input}
           element='input'
           type='radio'
           value='am'
-          name='start-am-pm'
-          id='start-am'
+          name='startAm'
+          id='start-am-pm'
           validate={[]}
           label='am'
         />
@@ -67,11 +69,11 @@ export class SessionForm extends React.Component {
           element='input'
           type='radio'
           value='pm'
-          name='start-am-pm'
-          id='start-pm'
+          name='startPM'
+          id='start-am-pm'
           validate={[]}
           label='pm'
-        />
+        /> */}
 
 
         <Field
@@ -79,19 +81,19 @@ export class SessionForm extends React.Component {
           element='input'
           type='text'
           max='2'
-          name='end-time'
+          name='end'
           id='end-time'
           validate={[]}
           label='End Time'
         />
 
-        <Field
+        {/* <Field
           component={Input}
           element='input'
           type='radio'
           value='am'
-          name='end-am-pm'
-          id='end-am'
+          name='endAm'
+          id='end-am-pm'
           validate={[]}
           label='am'
         />
@@ -101,11 +103,11 @@ export class SessionForm extends React.Component {
           element='input'
           type='radio'
           value='pm'
-          name='end-am-pm'
-          id='end-pm'
+          name='endPM'
+          id='end-am-pm'
           validate={[]}
           label='pm'
-        />
+        /> */}
 
         <Field
           component={Input}
@@ -121,8 +123,28 @@ export class SessionForm extends React.Component {
           component={Input}
           element='input'
           type='text'
-          name='session-notes'
+          name='notes1'
           id='session-notes'
+          validate={[]}
+          label='Notes'
+        />
+
+        <Field
+          component={Input}
+          element='input'
+          type='text'
+          name='notes2'
+          id='session-notes-2'
+          validate={[]}
+          label='Notes'
+        />
+
+        <Field
+          component={Input}
+          element='input'
+          type='text'
+          name='notes3'
+          id='session-notes-3'
           validate={[]}
           label='Notes'
         />
