@@ -1,20 +1,20 @@
 import {API_BASE_URL} from '../config'; 
 import {sessionRequest, sessionError, getSessions} from './get-sessions';
+import {firstLetterToUppercase, filterUndefinedNotes} from './helper-functions';
 
-export const filterUndefinedNotes = notes => notes.filter(note => note !== undefined
-);
 
-export const addSessionAPI = values => {
+
+const addSessionAPI = values => {
+
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
     
-    console.log('notes:', notes);
     const newSession = {
         date: values.date,
         startTime: values.start,
         endTime: values.end,
         location: values.location,
-        notes: notes,
-        attendees: [values.name]
+        notes: firstLetterToUppercase(notes),
+        attendees: firstLetterToUppercase([values.name])
     };
 
     const query = {
@@ -26,8 +26,8 @@ export const addSessionAPI = values => {
     return fetch(`${API_BASE_URL}/sessions`, query);
 };  
 
+
 export const addSession = (values) => dispatch => {
-    console.log('addSession was called')
     dispatch(sessionRequest());
     return addSessionAPI(values)
         .then(res => {

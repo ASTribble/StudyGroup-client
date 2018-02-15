@@ -1,15 +1,15 @@
 import {API_BASE_URL} from '../config'; 
 import {sessionRequest, sessionError, getSessions, getSessionById} from './get-sessions';
-
+import {firstLetterToUppercase} from './helper-functions';
 
 export const makeUpdateField = (field, session) => {
 
     if(Object.keys(field)[0] === 'name'){
-        const attendees = [...session.attendees, field.name]
+        const attendees = firstLetterToUppercase([...session.attendees, field.name]);
         return {attendees}
     }
     if(Object.keys(field)[0] === 'note'){
-        const notes = [...session.notes, field.note]
+        const notes = firstLetterToUppercase([...session.notes, field.note]);
         return {notes}
     }
 }
