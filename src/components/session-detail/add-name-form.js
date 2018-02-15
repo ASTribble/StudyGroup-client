@@ -9,6 +9,7 @@ export class AddNameForm extends React.Component {
   onSubmit(name){
     const names = makeUpdateField(name, this.props.session); 
     this.props.dispatch(updateSessionField(names, this.props.id));
+    this.props.reset();
   }
 
   render(){

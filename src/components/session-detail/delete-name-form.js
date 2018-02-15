@@ -13,6 +13,7 @@ export class DeleteNameForm extends React.Component {
         const names = makeDeletedField(field, this.props.session);
         console.log('names', names);
         this.props.dispatch(updateSessionField(names, this.props.id));
+        this.props.reset();
     }
 
     render(){

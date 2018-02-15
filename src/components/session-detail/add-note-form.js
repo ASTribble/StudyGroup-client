@@ -9,6 +9,7 @@ export class AddNoteForm extends React.Component {
     onSubmit(note){
         const notes = makeUpdateField(note, this.props.session);
         this.props.dispatch(updateSessionField(notes, this.props.id));
+        this.props.reset();
     }
 
     render(){

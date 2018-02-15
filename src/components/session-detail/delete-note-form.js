@@ -13,6 +13,7 @@ export class DeleteNoteForm extends React.Component {
         const notes = makeDeletedField(field, this.props.session);
         console.log('notes', notes);
         this.props.dispatch(updateSessionField(notes, this.props.id));
+        this.props.reset();
     }
 
     render(){
