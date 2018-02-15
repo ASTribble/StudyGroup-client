@@ -29,6 +29,7 @@ export class DeleteNoteForm extends React.Component {
                     id='note-to-delete'
                     name='noteToDelete'
                 >
+                    <option></option>
                     {makeOptions(this.props.notes)}
                 </Field>
                 <button id='delete-field'>Delete</button>   

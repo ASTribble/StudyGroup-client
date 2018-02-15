@@ -29,6 +29,7 @@ export class DeleteNameForm extends React.Component {
                     id='name-to-delete'
                     name='nameToDelete'
                 >
+                    <option></option>
                     {makeOptions(this.props.names)}
                 </Field>
                 <button id='delete-field'>Delete</button>   

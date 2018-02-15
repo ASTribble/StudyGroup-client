@@ -24,6 +24,7 @@ export class AddNoteForm extends React.Component {
                     type='text'
                     id='add-note-input'
                     name='note'
+                    placeholder='add your note'
                 />
                 <button id='add-note-button'>Add</button>   
             </form>
