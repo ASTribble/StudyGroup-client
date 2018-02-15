@@ -31,7 +31,6 @@ export class GroupPage extends React.Component{
           <main>
             < SessionForm className='add-session' />
             < SessionsList className='sessions-list'/>
-            < LocationsBar className='locations-bar'/>
           </main>
          </div>  
       );
