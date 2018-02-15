@@ -11,6 +11,7 @@ export class SessionForm extends React.Component {
   onSubmit(values){
     console.log('onSubmit was called');
     this.props.dispatch(addSession(values));
+    this.props.reset();
     // addSessionAPI(values);
   }
 
