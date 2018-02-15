@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import LocationTag from './location-tag';
 import SessionNotes from './session-notes';
 import NameList from './name-list';
+import HomeNav from '../home-nav/home-nav';
 import {getSessionById} from '../../actions/get-sessions';
 
 
@@ -15,6 +16,7 @@ export class SessionDetail extends React.Component{
    render(){
         return (
             <div>
+                <HomeNav />
                 <header>
                     <h2>{this.props.session.date}</h2>
                     <p>{this.props.session.startTime} to {this.props.session.endTime}</p>

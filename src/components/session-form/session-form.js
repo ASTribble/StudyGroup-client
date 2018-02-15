@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Input from './input';
 import {Field, reduxForm} from 'redux-form';
 import {addSession} from '../../actions/add-session';
+import {required, notEmpty} from '../validators';
 
 
 export class SessionForm extends React.Component {
@@ -30,7 +31,7 @@ export class SessionForm extends React.Component {
           type='text'
           name='name'
           id='name'
-          validate={[]}
+          validate={[required, notEmpty]}
           label='Your Name:'
         />
 
@@ -40,7 +41,7 @@ export class SessionForm extends React.Component {
           type='date'
           name='date'
           id='date'
-          validate={[]}
+          validate={[required, notEmpty]}
           label='Date of Session'
         />
 
@@ -50,7 +51,7 @@ export class SessionForm extends React.Component {
           type='text'
           name='start'
           id='start-time'
-          validate={[]}
+          validate={[required, notEmpty]}
           label='Start Time'
         />
 
@@ -61,7 +62,7 @@ export class SessionForm extends React.Component {
           max='2'
           name='end'
           id='end-time'
-          validate={[]}
+          validate={[required, notEmpty]}
           label='End Time'
         />
 
@@ -71,7 +72,7 @@ export class SessionForm extends React.Component {
           type='text'
           name='location'
           id='location'
-          validate={[]}
+          validate={[required, notEmpty]}
           label='Location'
         />
 
@@ -83,6 +84,7 @@ export class SessionForm extends React.Component {
           id='session-notes'
           validate={[]}
           label='Notes'
+          default=''
         />
 
         <Field
@@ -93,6 +95,7 @@ export class SessionForm extends React.Component {
           id='session-notes-2'
           validate={[]}
           label='Notes'
+          default=''
         />
 
         <Field
@@ -103,6 +106,7 @@ export class SessionForm extends React.Component {
           id='session-notes-3'
           validate={[]}
           label='Notes'
+          default=''
         />
 
         <button disabled={this.props.pristine || this.props.submitting}>

@@ -44,8 +44,5 @@ export const updateSessionField = (field, id) => dispatch => {
           return res.json();
          })
         .then(() => dispatch(getSessionById(id)))
-        // .then(session => console.log(session))
-        // .catch(err => console.error(err));
-    //     .then(res => dispatch(getSessions()))
         .catch(err => dispatch(sessionError(err)));
   };
