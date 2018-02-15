@@ -1,17 +1,19 @@
 import {API_BASE_URL} from '../config'; 
 import {sessionRequest, sessionError, getSessions} from './get-sessions';
 
-
-
+export const filterUndefinedNotes = notes => notes.filter(note => note !== undefined
+);
 
 export const addSessionAPI = values => {
-    console.log('addSessionAPI was called');
+    const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
+    
+    console.log('notes:', notes);
     const newSession = {
         date: values.date,
         startTime: values.start,
         endTime: values.end,
         location: values.location,
-        notes:[values.notes1, values.notes2, values.notes3],
+        notes: notes,
         attendees: [values.name]
     };
 
