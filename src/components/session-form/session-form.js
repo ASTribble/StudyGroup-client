@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Input from './input';
-import {Field, reduxForm, focus } from 'redux-form';
+import {Field, reduxForm} from 'redux-form';
 import {addSession} from '../../actions/add-session';
 
 
@@ -54,29 +54,6 @@ export class SessionForm extends React.Component {
           label='Start Time'
         />
 
-        {/* <Field
-          component={Input}
-          element='input'
-          type='radio'
-          value='am'
-          name='startAm'
-          id='start-am-pm'
-          validate={[]}
-          label='am'
-        />
-
-        <Field
-          component={Input}
-          element='input'
-          type='radio'
-          value='pm'
-          name='startPM'
-          id='start-am-pm'
-          validate={[]}
-          label='pm'
-        /> */}
-
-
         <Field
           component={Input}
           element='input'
@@ -87,28 +64,6 @@ export class SessionForm extends React.Component {
           validate={[]}
           label='End Time'
         />
-
-        {/* <Field
-          component={Input}
-          element='input'
-          type='radio'
-          value='am'
-          name='endAm'
-          id='end-am-pm'
-          validate={[]}
-          label='am'
-        />
-
-        <Field
-          component={Input}
-          element='input'
-          type='radio'
-          value='pm'
-          name='endPM'
-          id='end-am-pm'
-          validate={[]}
-          label='pm'
-        /> */}
 
         <Field
           component={Input}
@@ -160,4 +115,4 @@ export class SessionForm extends React.Component {
 
   export default reduxForm({
     form: 'session'
-  })(SessionForm);
+  })(connect()(SessionForm));

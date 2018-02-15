@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 
-export function SessionsList(props) {
-  console.log('props.sessions in list:', props.sessions)
- 
 
-  const list = props.sessions.map((session) => {
+
+export function SessionsList(props) {
+
+ const list = props.sessions.map((session) => {
     return (
       <li key={session.id} className='session-list-item' id={session.id} >
       <Link to={`/sessions/${session.id}`}>
@@ -28,7 +28,6 @@ export function SessionsList(props) {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state in sessionsList', state);
   return ({
     sessions: state.session.sessions
   });

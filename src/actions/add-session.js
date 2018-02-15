@@ -33,7 +33,7 @@ export const addSession = (values) => dispatch => {
             return new Promise.reject(res)
           }
           return res.json()
-      })
+        })
         .then(res => dispatch(getSessions()))
         .catch(err=> dispatch(sessionError(err)));
   };

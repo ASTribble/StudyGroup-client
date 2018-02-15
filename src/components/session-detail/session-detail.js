@@ -9,7 +9,6 @@ import {getSessionById} from '../../actions/get-sessions';
 export class SessionDetail extends React.Component{
 
     componentDidMount(){
-        console.log('Session detail component did mount');
         this.props.dispatch(getSessionById(this.props.id));
       }
    
@@ -29,7 +28,6 @@ export class SessionDetail extends React.Component{
 }
 
 const mapStateToProps = (state, props) => {
-    console.log('props in SessionDetail are:', props.match.params.sessionID);
     return ({
         session: state.session.detailedSession,
         id: props.match.params.sessionID
