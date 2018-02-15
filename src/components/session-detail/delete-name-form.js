@@ -9,9 +9,7 @@ export class DeleteNameForm extends React.Component {
 
 
     onSubmit(field){
-        console.log('field in onSubmit', field);
         const names = makeDeletedField(field, this.props.session);
-        console.log('names', names);
         this.props.dispatch(updateSessionField(names, this.props.id));
         this.props.reset();
     }
