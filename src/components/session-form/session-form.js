@@ -85,7 +85,6 @@ export class SessionForm extends React.Component {
           id='session-notes'
           validate={[]}
           label='Notes'
-          default=''
         />
 
         <Field
@@ -96,7 +95,6 @@ export class SessionForm extends React.Component {
           id='session-notes-2'
           validate={[]}
           label='Notes'
-          default=''
         />
 
         <Field
@@ -107,7 +105,6 @@ export class SessionForm extends React.Component {
           id='session-notes-3'
           validate={[]}
           label='Notes'
-          default=''
         />
 
         <button disabled={this.props.pristine || this.props.submitting}>
@@ -121,3 +118,12 @@ export class SessionForm extends React.Component {
   export default reduxForm({
     form: 'session'
   })(connect()(SessionForm));
+
+  	
+// Cory Mickelson	6:15 PM
+// new Date("2018-02-12")
+// array.sort(function(a,b){
+//   // Turn your strings into dates, and then subtract them
+//   // to get a value that is either negative, positive, or zero.
+//   return new Date(b.date) - new Date(a.date);
+// });
