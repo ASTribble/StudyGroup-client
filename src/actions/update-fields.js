@@ -35,12 +35,11 @@ export const makeDeletedField = (field, session) => {
     }
 }
 
+
 export const updateSessionFieldAPI = (field, id) => {
 
-    console.log('updateSessionFieldAPI was called');
     const updateBody = {...field, id}
    
-    console.log('updateBody:', updateBody);
     const query = {
         method: 'PUT', 
         body: JSON.stringify(updateBody),
