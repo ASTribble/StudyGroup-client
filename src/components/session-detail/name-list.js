@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import AddNameForm from './add-name-form';
+import DeleteNameForm from './delete-name-form';
 
 export function NameList (props){
 
@@ -14,6 +15,7 @@ export function NameList (props){
                 {nameList}
             </ul>  
             <AddNameForm />
+            <DeleteNameForm />
         </div>   
     );
 };

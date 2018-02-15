@@ -3,17 +3,37 @@ import {sessionRequest, sessionError, getSessions, getSessionById} from './get-s
 import {firstLetterToUppercase} from './helper-functions';
 
 export const makeUpdateField = (field, session) => {
+    const key = Object.keys(field)[0];
+    
+    if(key === 'name'){
+            const attendees = firstLetterToUppercase([...session.attendees, field.name]);
+            return {attendees}
 
-    if(Object.keys(field)[0] === 'name'){
-        const attendees = firstLetterToUppercase([...session.attendees, field.name]);
-        return {attendees}
     }
-    if(Object.keys(field)[0] === 'note'){
+    if(key === 'note'){
         const notes = firstLetterToUppercase([...session.notes, field.note]);
         return {notes}
     }
 }
 
+export const makeDeletedField = (field, session) => {
+    const key = Object.keys(field)[0];
+    
+    if(key === 'nameToDelete'){
+        const filteredNames = session.attendees.filter(attendee => 
+            attendee.toLowerCase() !== field[key].toLowerCase());
+
+        const attendees = firstLetterToUppercase(filteredNames);
+            return {attendees};
+    }
+    if(key === 'noteToDelete'){
+        const filteredNotes = session.notes.filter(note => 
+            note.toLowerCase() !== field[key].toLowerCase());
+
+        const notes = firstLetterToUppercase(filteredNotes);
+        return {notes};
+    }
+}
 
 export const updateSessionFieldAPI = (field, id) => {
 

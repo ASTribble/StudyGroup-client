@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import AddNoteForm from './add-note-form';
+import DeleteNoteForm from './delete-note-form';
 
 export function SessionNotes (props){
 
@@ -14,6 +15,7 @@ export function SessionNotes (props){
                 {notes}
             </ul> 
             <AddNoteForm />
+            <DeleteNoteForm />
         </section> 
     );
 };
