@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
 import LocationTag from './location-tag';
 import SessionNotes from './session-notes';
 import NameList from './name-list';
@@ -34,9 +33,7 @@ export class SessionDetail extends React.Component{
                 < SessionNotes />
                 < NameList />
                 <div id='delete-button-div'>
-                    <Link to='/'>
                     <button className='delete-button' onClick={(e)=>this.deleteSession(e)}> Delete Session </button>
-                    </Link>
                 </div>
             </div>    
         )
