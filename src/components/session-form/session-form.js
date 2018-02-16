@@ -9,6 +9,7 @@ import {required, notEmpty} from '../validators';
 export class SessionForm extends React.Component {
   
   onSubmit(values){
+    console.log('going in SessionForm:', values)
     this.props.dispatch(addSession(values));
     this.props.reset();
   }

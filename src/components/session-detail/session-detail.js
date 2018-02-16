@@ -29,7 +29,7 @@ export class SessionDetail extends React.Component{
             <div>
                 <HomeNav />
                 <header>
-                    <h2>{moment(this.props.session.Date).format('dddd MMMM Do YYYY')}</h2>
+                    <h2>{moment(this.props.session.startTime).format('dddd MMMM Do YYYY')}</h2>
                     <p>{moment(this.props.session.startTime).format('LT')} to {moment(this.props.session.endTime).format('LT')}</p>
                 </header>
                 < LocationTag />

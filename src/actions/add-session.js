@@ -1,11 +1,11 @@
 import {API_BASE_URL} from '../config'; 
 import {sessionRequest, sessionError, getSessions} from './get-sessions';
 import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-functions';
-
+import moment from 'moment';
 
 
 const addSessionAPI = values => {
-
+console.log('going in:', values.date)
     const date = new Date(values.date);
     const startTime = new Date(`${values.date} ${makeTime(values.start)}`);
     const endTime = new Date(`${values.date} ${makeTime(values.end)}`);

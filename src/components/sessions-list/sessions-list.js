@@ -5,22 +5,21 @@ import moment from 'moment';
 
 
 export function SessionsList(props) {
-  
   const list = props.sessions
     .sort((a, b) => a[props.sessions.startTime] < b[props.sessions.startTime])
     .map((session) => {
          return(
             <li key={session.id} className='session-list-item' id={session.id} >
               <Link to={`/sessions/${session.id}`}>
-               <h3>{moment(session.Date).format('dddd MMMM Do YYYY')}</h3>
+               <h3>{moment(session.startTime).format('dddd MMMM Do YYYY')}</h3>
                <p>{moment(session.startTime).format('LT')} - {moment(session.endTime).format('LT')} </p>
-                <p>Location:  {session.location}</p>
+                <p>{session.location}</p>
               </Link>
             </li>
         );   
     });
 
-
+  // format('LLLL')
   return (
   <div>  
     <h2> Sessions List </h2>
