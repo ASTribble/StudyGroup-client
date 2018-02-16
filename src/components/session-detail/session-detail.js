@@ -4,6 +4,7 @@ import LocationTag from './location-tag';
 import SessionNotes from './session-notes';
 import NameList from './name-list';
 import HomeNav from '../home-nav/home-nav';
+import moment from 'moment';
 
 import {getSessionById} from '../../actions/get-sessions';
 import {deleteSessionById} from '../../actions/delete-sessions';
@@ -24,14 +25,12 @@ export class SessionDetail extends React.Component{
    
    render(){
        
-       console.log(makeTime(this.props.session.startTime));
-
         return (
             <div>
                 <HomeNav />
                 <header>
-                    <h2>{this.props.session.date}</h2>
-                    <p>{this.props.session.startTime} to {this.props.session.endTime}</p>
+                    <h2>{moment(this.props.session.Date).format('dddd MMMM Do YYYY')}</h2>
+                    <p>{moment(this.props.session.startTime).format('LT')} to {moment(this.props.session.endTime).format('LT')}</p>
                 </header>
                 < LocationTag />
                 < SessionNotes />
