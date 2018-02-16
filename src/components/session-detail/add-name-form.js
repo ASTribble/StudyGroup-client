@@ -14,7 +14,7 @@ export class AddNameForm extends React.Component {
 
   render(){
       return(
-          <form className='form' id='add-note-form' onSubmit={this.props.handleSubmit((value)=>this.onSubmit(value))}>
+          <form className='form' id='add-name-form' onSubmit={this.props.handleSubmit((value)=>this.onSubmit(value))}>
           <label htmlFor='add-name-input'>Are you going?</label>
             <Field
                 component='input'

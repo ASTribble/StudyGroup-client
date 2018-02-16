@@ -1,15 +1,22 @@
 * {
 box-sizing: border-box;
+max-width: 500px;
 } 
 
-main {
+html {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main{
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   align-items: center;
 }
 
-#add-session-form{
-
+form {
     margin: 1em, auto, 2em;
     padding: 1em;
     color: #ECEECD;
@@ -20,7 +27,8 @@ main {
     flex-direction: column;
 }
 
-section {
+section,  #name-list-div, .location-tag  {
+  background-color: #00B7C2;
   display: flex;
   flex-direction: column;
   margin: 1em;
@@ -45,6 +53,7 @@ button {
   display: flex;
   justify-content: center;
   align-self: center;
+  border-radius: 5px;
  
 }
 
@@ -63,8 +72,28 @@ padding: 0;
   width: 90%;
 }
 
-header h1, header h2 {
+header h1, header h2, header p {
   padding-left: 12%;
   display: flex;
   color: #eceecd;
+}
+
+#delete-button-div {
+  background-color: #29186D;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.delete-button {
+  background-color: #00B7C2;
+}
+
+.location-tag{
+  font-size: 2em;
+  text-align: center;
+  border: .4em solid #29186D;
+  border-radius: 5px;
+  padding: .5em;
 }

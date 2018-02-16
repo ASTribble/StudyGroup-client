@@ -10,7 +10,7 @@ export function NameList (props){
     });
 
     return (
-        <div>
+        <div id='name-list-div'>
             <ul className='name-list'>
                 {nameList}
             </ul>  
