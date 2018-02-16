@@ -5,8 +5,9 @@ import moment from 'moment';
 
 
 export function SessionsList(props) {
+
   const list = props.sessions
-    .sort((a, b) => a[props.sessions.startTime] < b[props.sessions.startTime])
+    .sort((a, b) => a.startTime > b.startTime)
     .map((session) => {
          return(
             <li key={session.id} className='session-list-item' id={session.id} >
@@ -19,7 +20,6 @@ export function SessionsList(props) {
         );   
     });
 
-  // format('LLLL')
   return (
   <div>  
     <h2> Sessions List </h2>

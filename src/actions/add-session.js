@@ -5,7 +5,7 @@ import moment from 'moment';
 
 
 const addSessionAPI = values => {
-console.log('going in:', values.date)
+console.log('going in API:', values.date)
     const date = new Date(values.date);
     const startTime = new Date(`${values.date} ${makeTime(values.start)}`);
     const endTime = new Date(`${values.date} ${makeTime(values.end)}`);
@@ -14,10 +14,9 @@ console.log('going in:', values.date)
     console.log('date:', date, 'startTime:', startTime, 'endTime:', endTime);
 
     const newSession = {
-        date,
         startTime,
         endTime,
-        location: values.location,
+        location: firstLetterToUppercase(values.location),
         notes: firstLetterToUppercase(notes),
         attendees: firstLetterToUppercase([values.name])
     };
