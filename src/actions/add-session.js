@@ -16,7 +16,7 @@ console.log('going in API:', values.date)
     const newSession = {
         startTime,
         endTime,
-        location: firstLetterToUppercase(values.location),
+        location: firstLetterToUppercase([values.location]),
         notes: firstLetterToUppercase(notes),
         attendees: firstLetterToUppercase([values.name])
     };
