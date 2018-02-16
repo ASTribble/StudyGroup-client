@@ -33,9 +33,7 @@ export const getSessions = () => dispatch => {
         }
         return res.json()
     })
-    .then(res => {
-      dispatch(sessionSuccess(res.sessions));
-        console.log('response in getSessions:', res.sessions)})
+    .then(res => dispatch(sessionSuccess(res.sessions)))
     .catch(err=> dispatch(sessionError(err)));
 };
 
