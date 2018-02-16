@@ -97,3 +97,7 @@ header h1, header h2, header p {
   border-radius: 5px;
   padding: .5em;
 }
+
+div, section{
+  border-radius: 8px;
+}
