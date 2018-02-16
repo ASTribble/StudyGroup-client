@@ -7,7 +7,9 @@ import {firstLetterToUppercase, filterUndefinedNotes} from './helper-functions';
 const addSessionAPI = values => {
 
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
-    
+    // const date = new Date(values.date)
+    // const values = if(parseInt(values.start))
+
     const newSession = {
         date: values.date,
         startTime: values.start,

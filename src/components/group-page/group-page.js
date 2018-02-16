@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 
 import SessionForm from '../session-form/session-form';
 import SessionsList from '../sessions-list/sessions-list';
-import LocationsBar from '../locations-bar/locations-bar';
 import {getSessions} from '../../actions/get-sessions';
 
 

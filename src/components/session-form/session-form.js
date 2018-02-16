@@ -33,38 +33,39 @@ export class SessionForm extends React.Component {
           validate={[required, notEmpty]}
           label='Your Name:'
         />
+        <section className='date-time'>
+          <Field
+            component={Input}
+            element='input'
+            type='date'
+            name='date'
+            id='date'
+            validate={[required, notEmpty]}
+            label='Date of Session'
+          />
 
-        <Field
-          component={Input}
-          element='input'
-          type='date'
-          name='date'
-          id='date'
-          validate={[required, notEmpty]}
-          label='Date of Session'
-        />
+          <Field
+            component={Input}
+            element='input'
+            type='text'
+            name='start'
+            id='start-time'
+            placeholder= '3:15 pm'
+            validate={[required, notEmpty]}
+            label='Start Time'
+          />
 
-        <Field
-          component={Input}
-          element='input'
-          type='text'
-          name='start'
-          id='start-time'
-          validate={[required, notEmpty]}
-          label='Start Time'
-        />
-
-        <Field
-          component={Input}
-          element='input'
-          type='text'
-          max='2'
-          name='end'
-          id='end-time'
-          validate={[required, notEmpty]}
-          label='End Time'
-        />
-
+          <Field
+            component={Input}
+            element='input'
+            type='text'
+            name='end'
+            id='end-time'
+            placeholder='5:00 pm'
+            validate={[required, notEmpty]}
+            label='End Time'
+          />
+        </section>
         <Field
           component={Input}
           element='input'

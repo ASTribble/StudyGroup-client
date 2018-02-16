@@ -6,7 +6,8 @@ import NameList from './name-list';
 import HomeNav from '../home-nav/home-nav';
 
 import {getSessionById} from '../../actions/get-sessions';
-import {deleteSessionById} from '../../actions/delete-sessions'
+import {deleteSessionById} from '../../actions/delete-sessions';
+import {makeTime} from '../../actions/helper-functions';
 
 
 export class SessionDetail extends React.Component{
@@ -22,6 +23,10 @@ export class SessionDetail extends React.Component{
     }  
    
    render(){
+       let date = new Date(this.props.session.date);
+    //    date = date.toString();
+       console.log(makeTime(this.props.session.startTime));
+
         return (
             <div>
                 <HomeNav />
