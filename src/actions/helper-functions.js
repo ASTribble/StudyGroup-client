@@ -19,6 +19,7 @@ export const makeOptions = options => {
 
 
 export const makeTime = (time) => {
+    console.log('time coming in:', time)
     const inputDigits = time.split('');
     const filteredDigits = inputDigits.filter(digit => parseInt(digit, 10) >= 0);
     // const filteredTime = switch(filteredDigits.length)
@@ -52,11 +53,12 @@ export const makeTime = (time) => {
     }else if (hours === 24) {
         hours = 12
     }
-    
+    const filteredTime = `${hours}:${minutes}`;
     console.log('hours:', hours, 'minutes:', minutes);
     console.log('filteredDigits', filteredDigits, filteredDigits.slice(-2));
     console.log('inputDigits', inputDigits);
     console.log('adjuster:', adjuster);
+    console.log('filteredTime:', filteredTime);
     // if(timeArray.find('am'))
     // let normalizedTime = timeArray[0];
     // let adjuster;

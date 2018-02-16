@@ -47,7 +47,7 @@ export class SessionForm extends React.Component {
           <Field
             component={Input}
             element='input'
-            type='text'
+            type='time'
             name='start'
             id='start-time'
             placeholder= '3:15 pm'
@@ -58,7 +58,7 @@ export class SessionForm extends React.Component {
           <Field
             component={Input}
             element='input'
-            type='text'
+            type='time'
             name='end'
             id='end-time'
             placeholder='5:00 pm'
