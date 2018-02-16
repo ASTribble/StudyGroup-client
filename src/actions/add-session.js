@@ -4,10 +4,10 @@ import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-f
 
 
 const addSessionAPI = values => {
-
-    const date = new Date(values.date);
-    const startTime = date.setTime(makeTime(values.start));
-    const endTime = date.setTime(makeTime(values.end));
+    console.log('values.date:', values.date, 'values.start', values.start);
+ 
+    const startTime = new Date(`${values.date} ${makeTime(values.start)}`);
+    const endTime = new Date(`${values.date} ${makeTime(values.start)}`);
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
 
     const newSession = {
@@ -17,7 +17,7 @@ const addSessionAPI = values => {
         notes: firstLetterToUppercase(notes),
         attendees: firstLetterToUppercase([values.name])
     };
-
+    console.log('new session before query:', newSession);
     const query = {
         method: 'POST', 
         body: JSON.stringify(newSession),

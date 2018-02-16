@@ -25,7 +25,7 @@ where and when they will be out studying.
 ![Session List](./src/screenshots/session-list.png)
 ![Session Detail Heading](./src/screenshots/heading-detail.png)
 ![Session Note Section](./src/screenshots/add-note.png)
-![Session Names Section](./src/screenshots/name-section.png)
+![Session Names Section](./src/screenshots/names-section.png)
 ![Session Delete Button](./src/screenshots/delete-session.png)
 
 
