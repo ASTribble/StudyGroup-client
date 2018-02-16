@@ -4,6 +4,7 @@ import Input from './input';
 import {Field, reduxForm} from 'redux-form';
 import {addSession} from '../../actions/add-session';
 import {required, notEmpty} from '../validators';
+import './session-form.css';
 
 
 export class SessionForm extends React.Component {
@@ -23,7 +24,7 @@ export class SessionForm extends React.Component {
           this.onSubmit(values))}
       >
         <h2> Add Session </h2>
-
+        <section className='name'>
         <Field 
           component={Input}
           element='input'
@@ -33,6 +34,7 @@ export class SessionForm extends React.Component {
           validate={[required, notEmpty]}
           label='Your Name:'
         />
+        </section>
         <section className='date-time'>
           <Field
             component={Input}
@@ -66,6 +68,7 @@ export class SessionForm extends React.Component {
             label='End Time'
           />
         </section>
+        <section className='Location'>
         <Field
           component={Input}
           element='input'
@@ -75,7 +78,8 @@ export class SessionForm extends React.Component {
           validate={[required, notEmpty]}
           label='Location'
         />
-
+       </section> 
+      <section className= 'notes'>
         <Field
           component={Input}
           element='input'
@@ -105,7 +109,7 @@ export class SessionForm extends React.Component {
           validate={[]}
           label='Notes'
         />
-
+        </section>
         <button disabled={this.props.pristine || this.props.submitting}>
           Submit
         </button>

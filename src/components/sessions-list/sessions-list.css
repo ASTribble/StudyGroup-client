@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.sessions-list-div {
+  background-color: #29186D;
+  color:#ECEECD;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: space-around;
+  border-radius: 2em;
+}
+
+.sessions-list {
+  list-style: none;
+  width:90%;
+  margin: 1em, auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+  /* #00B7C2,ECEECD,29186D,51CA3F,4752C2 */
+.session-list-item {
+  list-style: none;
+  margin: 1em;
+  padding-left: 1em;
+  color:#ECEECD;
+  background-color:#00B7C2;
+  border-radius: 5px;
+  width: 100%;
+  height: 8em;
+  display: block;
+}
+
+p {
+  color:#ECEECD;
+  text-decoration: none;
+}
+
+
+
+
