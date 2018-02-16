@@ -11,7 +11,6 @@ export class GroupPage extends React.Component{
 
 
     componentDidMount(){
-      console.log('component did mount');
       this.props.dispatch(getSessions());
     }
 

@@ -9,7 +9,6 @@ import {required, notEmpty} from '../validators';
 export class SessionForm extends React.Component {
   
   onSubmit(values){
-    console.log('going in SessionForm:', values)
     this.props.dispatch(addSession(values));
     this.props.reset();
   }
@@ -120,10 +119,3 @@ export class SessionForm extends React.Component {
   })(connect()(SessionForm));
 
   	
-// Cory Mickelson	6:15 PM
-// new Date("2018-02-12")
-// array.sort(function(a,b){
-//   // Turn your strings into dates, and then subtract them
-//   // to get a value that is either negative, positive, or zero.
-//   return new Date(b.date) - new Date(a.date);
-// });

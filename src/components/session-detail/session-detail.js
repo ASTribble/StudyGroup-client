@@ -8,7 +8,6 @@ import moment from 'moment';
 
 import {getSessionById} from '../../actions/get-sessions';
 import {deleteSessionById} from '../../actions/delete-sessions';
-import {makeTime} from '../../actions/helper-functions';
 
 
 export class SessionDetail extends React.Component{

@@ -19,12 +19,14 @@ export const makeOptions = options => {
 
 
 export const makeTime = (time) => {
-    console.log('time coming in:', time)
+
     const inputDigits = time.split('');
     const filteredDigits = inputDigits.filter(digit => parseInt(digit, 10) >= 0);
+    
     let adjuster;
     let hours;
     let minutes;
+
     if(time.includes('pm'))
      {
         adjuster = 12;
@@ -49,13 +51,14 @@ export const makeTime = (time) => {
 
     if (hours === 12) {
         hours = '00';
-    }else if (hours === 24) {
+    }
+    else if (hours === 24) {
         hours = '12'
     }
     if (minutes.length === 1){
         minutes = `0${minutes}`
     }  
     const filteredTime =  `${hours}:${minutes}`;
-    console.log('filteredTime:', filteredTime)
+
     return filteredTime;
 }

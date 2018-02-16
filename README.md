@@ -1,3 +1,12 @@
+Make sure the Github repository has a README by the time you're done. Your README should include: a description of your app, a link to a deployed version, screenshots and your tech stack. It should also briefly describe where each of the components of the project live in your codebase, and if your app is meant to be re-used by other developers, should include instructions on how to get the app up and running. You should use your README instead of slides for this afternoon's demo.
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

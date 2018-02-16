@@ -10,7 +10,6 @@ export class SessionsList extends React.Component {
   render() {
 
   const filteredList = (this.props.sessions.filter(s => s.startTime < moment().format()));
-    console.log('filteredList', filteredList);
 
   if(filteredList.length > 0){
     filteredList.map(session => this.props.dispatch(deleteSessionById(session.id)))
