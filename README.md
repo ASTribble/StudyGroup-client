@@ -20,13 +20,13 @@ where and when they will be out studying.
 
 
 
-![Session Detail View]('./src/screenshots/heading.png)
-![Session Detail View]('./src/screenshots/add-session-form.png)
-![Session Detail View]('./src/screenshots/session-list.png)
-![Session Detail View]('./src/screenshots/heading-detail.png)
-![Session Detail View]('./src/screenshots/add-note.png)
-![Session Detail View]('./src/screenshots/name-section.png)
-![Session Detail View]('./src/screenshots/delete-session.png)
+![Session Detail View]('./src/screenshots/heading.png')
+![Session Detail View]('./src/screenshots/add-session-form.png')
+![Session Detail View]('./src/screenshots/session-list.png')
+![Session Detail View]('./src/screenshots/heading-detail.png')
+![Session Detail View]('./src/screenshots/add-note.png')
+![Session Detail View]('./src/screenshots/name-section.png')
+![Session Detail View]('./src/screenshots/delete-session.png')
 
 
 ## Scenarios
