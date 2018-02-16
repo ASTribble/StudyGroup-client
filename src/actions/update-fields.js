@@ -1,5 +1,5 @@
 import {API_BASE_URL} from '../config'; 
-import {sessionRequest, sessionError, getSessions, getSessionById} from './get-sessions';
+import {sessionRequest, sessionError, getSessionById} from './get-sessions';
 import {firstLetterToUppercase} from './helper-functions';
 
 export const makeUpdateField = (field, session) => {

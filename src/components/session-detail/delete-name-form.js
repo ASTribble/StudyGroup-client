@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxForm} from 'redux-form';
-import {updateSessionField, makeUpdateField, makeDeletedField} from '../../actions/update-fields';
+import {updateSessionField, makeDeletedField} from '../../actions/update-fields';
 import {makeOptions} from '../../actions/helper-functions';
 
 export class DeleteNameForm extends React.Component {

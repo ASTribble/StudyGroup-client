@@ -23,8 +23,7 @@ export class SessionDetail extends React.Component{
     }  
    
    render(){
-       let date = new Date(this.props.session.date);
-    //    date = date.toString();
+       
        console.log(makeTime(this.props.session.startTime));
 
         return (

@@ -22,7 +22,6 @@ export const makeTime = (time) => {
     console.log('time coming in:', time)
     const inputDigits = time.split('');
     const filteredDigits = inputDigits.filter(digit => parseInt(digit, 10) >= 0);
-    // const filteredTime = switch(filteredDigits.length)
     let adjuster;
     let hours;
     let minutes;
@@ -34,40 +33,29 @@ export const makeTime = (time) => {
     }
 
     if(filteredDigits.length < 3){
-        hours = parseInt(filteredDigits.join('')) + adjuster; 
-        minutes = 0;
+        hours = parseInt(filteredDigits.join(''), 10) + adjuster; 
+        minutes = '00';
     } 
 
     if (filteredDigits.length === 3){
-        hours = parseInt(filteredDigits[0]) + adjuster;
-        minutes = parseInt(filteredDigits.slice(-2).join(''));
+        hours = parseInt(filteredDigits[0], 10) + adjuster;
+        minutes = parseInt(filteredDigits.slice(-2).join(''), 10);
     }
 
     if(filteredDigits.length === 4){
-        hours = parseInt(filteredDigits.slice(0, 2).join('')) + adjuster; 
-        minutes = parseInt(filteredDigits.slice(-2).join(''));
+        hours = parseInt(filteredDigits.slice(0, 2).join(''), 10) + adjuster; 
+        minutes = parseInt(filteredDigits.slice(-2).join(''), 10);
     }
 
     if (hours === 12) {
-        hours = 0;
+        hours = '00';
     }else if (hours === 24) {
-        hours = 12
+        hours = '12'
     }
-    const filteredTime = `${hours}:${minutes}`;
-    console.log('hours:', hours, 'minutes:', minutes);
-    console.log('filteredDigits', filteredDigits, filteredDigits.slice(-2));
-    console.log('inputDigits', inputDigits);
-    console.log('adjuster:', adjuster);
-    console.log('filteredTime:', filteredTime);
-    // if(timeArray.find('am'))
-    // let normalizedTime = timeArray[0];
-    // let adjuster;
-    // if (timeArray[1] && timeArray[1] === 'pm'){
-    //     adjuster = 12;
-    // }
-    // else { 
-    //     adjuster = 0;
-    // }
-    // console.log ('timeArray:', timeArray, 'adjuster:', adjuster);
-
+    if (minutes.length === 1){
+        minutes = `0${minutes}`
+    }  
+    const filteredTime =  `${hours}:${minutes}`;
+    console.log('filteredTime:', filteredTime)
+    return filteredTime;
 }
