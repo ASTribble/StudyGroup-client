@@ -21,7 +21,7 @@ export class SessionsList extends React.Component {
          return(
             <li key={session.id} className='session-list-item' id={session.id} >
               <Link to={`/sessions/${session.id}`}>
-               <h3>{moment(session.startTime).format('dddd MM Do YYYY')}</h3>
+               <h3>{moment(session.startTime).format('dddd, MMMM Do YYYY')}</h3>
                <p>{moment(session.startTime).format('LT')} - {moment(session.endTime).format('LT')} </p>
                 <p>{session.location}</p>
               </Link>
