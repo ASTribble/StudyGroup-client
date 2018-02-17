@@ -7,7 +7,7 @@ const addSessionAPI = values => {
     console.log('values.date:', values.date, 'values.start', values.start);
  
     const startTime = new Date(`${values.date} ${makeTime(values.start)}`);
-    const endTime = new Date(`${values.date} ${makeTime(values.start)}`);
+    const endTime = new Date(`${values.date} ${makeTime(values.end)}`);
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
 
     const newSession = {
