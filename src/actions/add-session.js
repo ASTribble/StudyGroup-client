@@ -1,3 +1,4 @@
+import moment from 'moment';
 import {API_BASE_URL} from '../config'; 
 import {sessionRequest, sessionError, getSessions} from './get-sessions';
 import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-functions';
@@ -6,8 +7,8 @@ import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-f
 const addSessionAPI = values => {
     console.log('values.date:', values.date, 'values.start', values.start);
  
-    const startTime = new Date(`${values.date} ${makeTime(values.start)}`);
-    const endTime = new Date(`${values.date} ${makeTime(values.end)}`);
+    const startTime = moment(`${values.date} ${makeTime(values.start)}`);
+    const endTime = moment(`${values.date} ${makeTime(values.end)}`);
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
 
     const newSession = {
