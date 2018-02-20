@@ -101,3 +101,7 @@ header h1, header h2, header p {
 div, section{
   border-radius: 8px;
 }
+
+.name-list, .session-notes {
+  color: #29186D;
+}
