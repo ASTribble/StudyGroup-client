@@ -110,7 +110,7 @@ export class SessionForm extends React.Component {
           label='Notes'
         />
         </section>
-        <button disabled={this.props.pristine || this.props.submitting}>
+        <button disabled={this.props.pristine || this.props.submitting} onClick="">
           Submit
         </button>
       </form>
