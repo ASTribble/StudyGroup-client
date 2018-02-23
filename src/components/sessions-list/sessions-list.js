@@ -9,13 +9,13 @@ export class SessionsList extends React.Component {
 
   render() {
 
-  const filteredList = (this.props.sessions.filter(s => s.endTime < moment().format()));
+  const validSessions = (this.props.sessions.filter(s => s.endTime > moment().format()));
 
-  if(filteredList.length > 0){
-    filteredList.map(session => this.props.dispatch(deleteSessionById(session.id)))
-  }
+  // if(filteredList.length > 0){
+  //   filteredList.map(session => this.props.dispatch(deleteSessionById(session.id)))
+  // }
 
-  const list = this.props.sessions
+  const list = validSessions
     .sort((a, b) => a.startTime > b.startTime)
     .map((session) => {
          return(
