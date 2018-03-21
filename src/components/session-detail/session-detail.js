@@ -5,6 +5,7 @@ import SessionNotes from './session-notes';
 import NameList from './name-list';
 import HomeNav from '../home-nav/home-nav';
 import moment from 'moment';
+import './session-detail.css';
 
 import {getSessionById} from '../../actions/get-sessions';
 import {deleteSessionById} from '../../actions/delete-sessions';
@@ -32,8 +33,10 @@ export class SessionDetail extends React.Component{
                     <p>{moment(this.props.session.startTime).format('LT')} to {moment(this.props.session.endTime).format('LT')}</p>
                 </header>
                 < LocationTag />
-                < SessionNotes />
-                < NameList />
+                <div className='notes-and-names'>
+                    < SessionNotes />
+                    < NameList />
+                </div>
                 <div id='delete-button-div'>
                     <button className='delete-button' onClick={(e)=>this.deleteSession(e)}> Delete Session </button>
                 </div>

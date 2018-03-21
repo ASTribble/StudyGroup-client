@@ -5,6 +5,7 @@ import SessionForm from '../session-form/session-form';
 import SessionsList from '../sessions-list/sessions-list';
 import {getSessions} from '../../actions/get-sessions';
 
+import './group-page.css';
 
 
 export class GroupPage extends React.Component{
@@ -20,7 +21,7 @@ export class GroupPage extends React.Component{
         loading = <div> Loading... </div>
       }
       return (
-        <div>  
+        <div className='page'>  
           <header>
             <h1>Study Group</h1>
             <h2>Group Name</h2>

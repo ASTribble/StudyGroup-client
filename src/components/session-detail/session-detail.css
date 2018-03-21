@@ -1,0 +1,64 @@
+
+  .location-tag {
+    margin: .5em auto;
+    border-radius: .5em;
+    max-width: 90%;
+  }
+
+  button { 
+    max-width: 250px;
+  }
+
+  input, select {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    font-size: medium;
+  }
+    .session-notes, .name-list{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .session-note, .name-list-item{
+    padding: 0;
+    font-weight: bold;
+  }
+
+
+  .notes-section, #name-list-div{
+    /* margin: .5em; */
+    margin-top: 0;
+    width: 90%;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 1px solid #29186D;  */
+  }
+
+  .notes-section h3, #name-list-div h3{
+    padding-left: 1em;
+    font-size: 1.3em;
+  }
+
+@media (min-width: 700px){
+
+  .notes-and-names {
+    display: flex;
+    align-items: space-between;
+  }
+
+  .session-notes, .name-list{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .session-note, .name-list-item{
+    padding: 0;
+    font-weight: bold;
+  }
+
+}

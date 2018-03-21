@@ -1,0 +1,59 @@
+.page {
+  max-width: 500px;
+  margin: 1em, auto;
+}
+
+.add-session-form, .sessions-list-div{
+  margin: .5em auto;
+  padding: 1em 2em 2em;
+}
+
+.sessions-list-div {
+  padding: .7em 0;
+}
+
+.sessions-list {
+  padding: 0;
+  margin: 1em auto;
+}
+
+.session-list-item{
+  margin: .5em auto;
+}
+
+@media (min-width: 700px){
+  
+  .page {
+    max-width: 750px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 2;
+  }
+
+  .add-session-form, .sessions-list-div{
+    max-width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+  }
+
+  .sessions-list-div {
+  margin: 0;
+  padding: 0;
+}
+
+.sessions-list {
+  padding: 0;
+  margin: 1em auto;
+}
+
+.session-list-item{
+  margin: .5em auto;
+}
+
+
+}

@@ -23,7 +23,7 @@ export class SessionForm extends React.Component {
         onSubmit={this.props.handleSubmit(values =>
           this.onSubmit(values))}
       >
-        <h2> Add Session </h2>
+        <h2> Add A Session </h2>
         <section className='name'>
         <Field 
           component={Input}

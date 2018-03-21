@@ -11,7 +11,8 @@ export function NameList (props){
 
     return (
         <div id='name-list-div'>
-            <ul className='name-list'>
+            <h3>Attendees:</h3>
+            <ul className='name-list'> 
                 {nameList}
             </ul>  
             <AddNameForm />

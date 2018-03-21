@@ -1,6 +1,6 @@
 * {
 box-sizing: border-box;
-max-width: 500px;
+max-width: 750px;
 } 
 
 html {
@@ -105,3 +105,8 @@ div, section{
 .name-list, .session-notes {
   color: #29186D;
 }
+
+.button {
+  max-width: 300px;
+}
+

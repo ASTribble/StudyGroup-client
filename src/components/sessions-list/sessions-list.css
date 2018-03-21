@@ -9,7 +9,7 @@
   width: 100%;
   flex-direction: column;
   align-items: space-around;
-  border-radius: 2em;
+  border-radius: 10px;
 }
 
 .sessions-list {
@@ -24,7 +24,7 @@
   /* #00B7C2,ECEECD,29186D,51CA3F,4752C2 */
 .session-list-item {
   list-style: none;
-  margin: 1em;
+  margin: 1em auto;
   padding-left: 1em;
   color:#ECEECD;
   background-color:#00B7C2;

@@ -11,6 +11,8 @@ export function SessionNotes (props){
 
     return (
         <section className='notes-section'>
+            <h3>About this Session:</h3>
+            
             <ul className='session-notes'>
                 {notes}
             </ul> 
