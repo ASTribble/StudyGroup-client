@@ -1,11 +1,12 @@
 .page {
   max-width: 500px;
-  margin: 1em, auto;
+  margin: 1em auto;
 }
 
 .add-session-form, .sessions-list-div{
   margin: .5em auto;
   padding: 1em 2em 2em;
+  width: 95%;
 }
 
 .sessions-list-div {
@@ -21,12 +22,30 @@
   margin: .5em auto;
 }
 
+h1 {
+  font-size: 40px;
+  margin-bottom: .36em;
+}
+
+h2 {
+  margin-top: 5px;
+  padding-bottom: .72em;
+}
+
+header {
+  width: 95%;
+}
+
 @media (min-width: 700px){
   
   .page {
     max-width: 750px;
   }
 
+  header {
+    width: 95%;
+    margin: 1em auto;
+  }
   main {
     display: flex;
     flex-direction: row;
@@ -39,6 +58,11 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2em;
+  }
+
+  .add-session-form{
+    margin-top: 0;
+    padding-top: 1em;
   }
 
   .sessions-list-div {
@@ -54,6 +78,7 @@
 .session-list-item{
   margin: .5em auto;
 }
+
 
 
 }

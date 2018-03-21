@@ -14,7 +14,8 @@
     margin-bottom: 1em;
     font-size: medium;
   }
-    .session-notes, .name-list{
+
+  .session-notes, .name-list{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -24,23 +25,35 @@
   .session-note, .name-list-item{
     padding: 0;
     font-weight: bold;
+    font-size: 20px;
   }
 
-
   .notes-section, #name-list-div{
-    /* margin: .5em; */
     margin-top: 0;
     width: 90%;
     padding: 1em;
     margin-right: auto;
     margin-left: auto;
-    /* border: 1px solid #29186D;  */
   }
 
   .notes-section h3, #name-list-div h3{
     padding-left: 1em;
     font-size: 1.3em;
   }
+
+  .delete-button {
+    max-width: 75%;
+  }
+
+  #delete-button-div {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+#home-nav {
+  padding: 1em 1em 0;
+}
+
 
 @media (min-width: 700px){
 
@@ -59,6 +72,15 @@
   .session-note, .name-list-item{
     padding: 0;
     font-weight: bold;
+  }
+
+  .notes-section, #name-list-div{
+     width: 49%;
+  }
+
+  #delete-button-div {
+    width: 95%;
+    margin: 0 auto;
   }
 
 }

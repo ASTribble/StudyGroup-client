@@ -29,8 +29,8 @@ export class SessionDetail extends React.Component{
             <div>
                 <HomeNav />
                 <header>
-                    <h2>{moment(this.props.session.startTime).format('dddd MMMM Do YYYY')}</h2>
-                    <p>{moment(this.props.session.startTime).format('LT')} to {moment(this.props.session.endTime).format('LT')}</p>
+                    <h1>{moment(this.props.session.startTime).format('dddd MMMM Do YYYY')}</h1>
+                    <h2>{moment(this.props.session.startTime).format('LT')} to {moment(this.props.session.endTime).format('LT')}</h2>
                 </header>
                 < LocationTag />
                 <div className='notes-and-names'>

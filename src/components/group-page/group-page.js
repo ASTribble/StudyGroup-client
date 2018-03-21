@@ -24,7 +24,7 @@ export class GroupPage extends React.Component{
         <div className='page'>  
           <header>
             <h1>Study Group</h1>
-            <h2>Group Name</h2>
+            <h2>Beta Group</h2>
           </header>
           {loading}
           <main>
