@@ -29,7 +29,7 @@ export class SessionsList extends React.Component {
       return (
       <div className="sessions-list-div">  
         {/* <h2> Sessions List </h2> */}
-        <ul className='sessions-list'>
+        <ul className='sessions-list' ariaLive='assertive'>
           {list}
         </ul>
       </div>  

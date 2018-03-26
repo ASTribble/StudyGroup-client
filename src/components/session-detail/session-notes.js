@@ -13,7 +13,7 @@ export function SessionNotes (props){
         <section className='notes-section'>
             <h3>About this Session:</h3>
             
-            <ul className='session-notes'>
+            <ul className='session-notes' ariaLive='assertive'>
                 {notes}
             </ul> 
             <AddNoteForm />

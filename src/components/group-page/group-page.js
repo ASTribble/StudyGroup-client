@@ -22,7 +22,7 @@ export class GroupPage extends React.Component{
       }
       return (
         <div className='page'>  
-          <header>
+          <header role='banner'>
             <h1>Study Group</h1>
             <h2>Beta Group</h2>
           </header>

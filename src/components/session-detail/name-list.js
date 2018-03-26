@@ -12,7 +12,7 @@ export function NameList (props){
     return (
         <div id='name-list-div'>
             <h3>Attendees:</h3>
-            <ul className='name-list'> 
+            <ul className='name-list' ariaLive='assertive'> 
                 {nameList}
             </ul>  
             <AddNameForm />
