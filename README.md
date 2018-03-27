@@ -3,7 +3,6 @@
 
 A. Scott Tribble
 Thinkful React Capstone
-Last Updated: Friday, 16 February 2018.
 
 ## Overview
 
