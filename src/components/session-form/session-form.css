@@ -58,11 +58,11 @@ button {
 }
 
 header {
-margin-left: auto;
-margin-right: auto;
-margin-top: 1em;
-margin-bottom: 1em;
-padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-self: space-around;

@@ -22,8 +22,6 @@ export const makeTime = (time) => {
 
     const inputDigits = time.split('');
     const filteredDigits = inputDigits.filter(digit => parseInt(digit, 10) >= 0);
-    console.log('inputDigits:', inputDigits);
-    console.log('filteredDigits:', filteredDigits);
     
     let adjuster;
     let hours;

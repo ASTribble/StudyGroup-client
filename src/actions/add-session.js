@@ -5,9 +5,6 @@ import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-f
 
 
 const addSessionAPI = values => {
-    console.log('values.date:', values.date, 'values.start', values.start);
-    // console.log('moment().format():', moment(`${values.date} ${makeTime(values.start)}`).format());
-    // console.log('moment():', moment(`${values.date} ${makeTime(values.start)}`));
 
     const startTime = moment(`${values.date} ${makeTime(values.start)}`).format();
     const endTime = moment(`${values.date} ${makeTime(values.end)}`).format();
@@ -20,7 +17,7 @@ const addSessionAPI = values => {
         notes: firstLetterToUppercase(notes),
         attendees: firstLetterToUppercase([values.name])
     };
-    console.log('new session before query:', newSession);
+
     const query = {
         method: 'POST', 
         body: JSON.stringify(newSession),

@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import AddNameForm from './add-name-form';
 import DeleteNameForm from './delete-name-form';
 
+
 export function NameList (props){
 
     const nameList = props.names.map((name, index) => {
@@ -12,7 +13,7 @@ export function NameList (props){
     return (
         <div id='name-list-div'>
             <h3>Attendees:</h3>
-            <ul className='name-list' ariaLive='assertive'> 
+            <ul className='name-list' aria-live='assertive'> 
                 {nameList}
             </ul>  
             <AddNameForm />

@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 import moment from 'moment';
-import {deleteSessionById} from '../../actions/delete-sessions';
 import './sessions-list.css';
 
 export class SessionsList extends React.Component {
@@ -29,7 +28,7 @@ export class SessionsList extends React.Component {
       return (
       <div className="sessions-list-div">  
         {/* <h2> Sessions List </h2> */}
-        <ul className='sessions-list' ariaLive='assertive'>
+        <ul className='sessions-list' aria-live='assertive'>
           {list}
         </ul>
       </div>  

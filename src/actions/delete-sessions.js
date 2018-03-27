@@ -13,7 +13,7 @@ export const deleteSessionAPI = id => {
     return fetch(`${API_BASE_URL}/sessions/${id}`, query);
 };  
 
-export const deleteSessionById= id => dispatch => {
+export const deleteSessionById = id => dispatch => {
     dispatch(sessionRequest);
     return deleteSessionAPI(id)
     .then(res => {

@@ -4,10 +4,9 @@ import {Field, reduxForm} from 'redux-form';
 import {updateSessionField, makeDeletedField} from '../../actions/update-fields';
 import {makeOptions} from '../../actions/helper-functions';
 
+
 export class DeleteNameForm extends React.Component {
   
-
-
     onSubmit(field){
         const names = makeDeletedField(field, this.props.session);
         this.props.dispatch(updateSessionField(names, this.props.id));
