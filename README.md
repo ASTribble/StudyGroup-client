@@ -1,7 +1,7 @@
 
 # StudyGroup
 
-A. Scott Tribble
+A. Scott Tribble   
 Thinkful React Capstone
 
 ## Overview
