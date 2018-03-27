@@ -14,7 +14,7 @@ where and when they will be out studying.
   http://eager-brown-85af5e.netlify.com/
 
 #### Link to Repos:
-  client: https://github.com/thinkful-ei17/scott-study-group-client
+  client: https://github.com/thinkful-ei17/scott-study-group-client   
   server: https://github.com/thinkful-ei17/scott-study-group-server
 
 
