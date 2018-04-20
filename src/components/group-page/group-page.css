@@ -22,8 +22,10 @@
   margin: .5em auto;
 }
 
-h1 {
-  font-size: 40px;
+header h1 {
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
   margin-bottom: .36em;
 }
 
@@ -33,7 +35,34 @@ h2 {
 }
 
 header {
+  padding: 24px 6px;
+  text-align: center;
   width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+header p {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.flex{
+  display: flex;
+  justify-content: baseline;
+}
+
+.third-width{
+  width: 33%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 700px){
@@ -78,5 +107,6 @@ header {
   .session-list-item{
     margin: .5em auto;
   }
+
 
 }
