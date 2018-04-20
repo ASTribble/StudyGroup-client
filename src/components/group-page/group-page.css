@@ -1,6 +1,9 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif; */
 .page {
   max-width: 500px;
   margin: 1em auto;
+  font-family: 'Lato', sans-serif;
 }
 
 .add-session-form, .sessions-list-div{
@@ -11,7 +14,7 @@
 
 .sessions-list-div {
   padding: .7em 0;
-}
+} 
 
 .sessions-list {
   padding: 0;
@@ -27,11 +30,19 @@ header h1 {
   padding: 0;
   margin: 0;
   margin-bottom: .36em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-stretch: 1.5;
 }
 
-h2 {
+h2, h3 {
   margin-top: 5px;
-  padding-bottom: .72em;
+  /* padding-bottom: .72em; */
+  font-family: 'Roboto', sans-serif;
+  color: #F0F2E2;
+  border-bottom: 2px solid #f0f2e2 ;
+  /* color: #29186D;
+  border-bottom: 2px solid #29186D ; */
 }
 
 header {
@@ -51,13 +62,10 @@ header p {
   font-size: 24px;
 }
 
+
 .flex{
   display: flex;
   justify-content: baseline;
-}
-
-.third-width{
-  width: 33%;
 }
 
 .center {
