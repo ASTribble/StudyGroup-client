@@ -18,8 +18,9 @@ main{
 
 form {
     margin: 1em, auto, 2em;
-    padding: 1em;
+    padding: 2em 1em;
     color: #ECEECD;
+    color: #fcfcf7;
     background-color: #00B7C2;
     border-radius: 10px;
     width: 95%;
@@ -32,13 +33,24 @@ section,  #name-list-div, .location-tag  {
   display: flex;
   flex-direction: column;
   margin: 1em;
-  padding: 0, 2em;
-  color: #ECEECD;
+  /* padding: 0, 2em; */
+  color: #29186D;
 }
 
-input {
+input, select{
+  margin: 5px auto;
   display: flex;
   flex-direction: row;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 264px;
+  max-width: 100%;
+  color: #29189A
+}
+
+label {
+  color: #f0f2e2;
+  font-size: 18px;
 }
 
 .notes input{
@@ -48,8 +60,10 @@ input {
 button {
   background-color: #29186D;
   color: #ECEECD;
-  height: 3em;
-  width: 80%;
+  /* height: 3em; */
+  font-size: 18px;
+  padding: 8px;
+  width: 264px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -67,16 +81,21 @@ header {
   flex-direction: column;
   align-self: space-around;
   background-color: #29186D;
-
+  color: #ECEECD;
   border-radius: 10px;
   width: 90%;
 }
 
-header h1, header h2, header p {
+/* h3 {
+    padding-left: 1em;
+    font-size: 1.3em;
+    color: #ECEECD;
+} */
+/* header h1, header h2, header p {
   padding-left: 12%;
   display: flex;
   color: #eceecd;
-}
+} */
 
 #delete-button-div {
   background-color: #29186D;
@@ -104,7 +123,8 @@ div, section{
 }
 
 .name-list, .session-notes {
-  color: #29186D;
+  color: #29189A;
+  font-weight: normal;
 }
 
 .button {

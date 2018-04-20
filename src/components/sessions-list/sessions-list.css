@@ -30,13 +30,40 @@
   background-color:#00B7C2;
   border-radius: 5px;
   width: 100%;
-  height: 8em;
   display: block;
 }
 
-p {
-  color:#ECEECD;
+a {
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+
+a h3 {
+  padding-right: 5px;
+  max-width: 96%;
+  color: #29189A;
+  border-bottom: 2px solid #29189A;
+}
+
+a h3:hover{
+  color: #eceecd;
+}
+
+a h3:visited{
+  color: #685DB1;
+}
+
+a p {
+  color: #eceecd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a p:hover {
+  color: #29189A;
 }
 
 
