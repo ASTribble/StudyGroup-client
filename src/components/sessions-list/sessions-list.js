@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import moment from 'moment';
 import './sessions-list.css';
 
+
 export class SessionsList extends React.Component {
 
   render() {

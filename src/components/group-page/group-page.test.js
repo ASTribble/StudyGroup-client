@@ -3,10 +3,10 @@ import '../setupTests';
 import { shallow, mount } from 'enzyme';
 
 
-import {SessionsList} from './sessions-list';
+import { GroupPage } from './group-page';
 
-describe('<SessionsList />', () => {
+describe('<GroupPage />', () => {
   it('Smoke test - renders without crashing', () => {
-    shallow(<SessionsList sessions={[1,2,3,]}/>);
+    shallow(<GroupPage dispatch={jest.fn} />);
   });
 })
