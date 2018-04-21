@@ -10,7 +10,7 @@ StudyGroup is a web-based app that lets people in a given group easily communica
 where and when they will be out studying.
 
 #### Link to Live App:
-  http://eager-brown-85af5e.netlify.com/
+  https://study-group.netlify.com/
 
 #### Link to Repos:
   client: https://github.com/thinkful-ei17/scott-study-group-client   
