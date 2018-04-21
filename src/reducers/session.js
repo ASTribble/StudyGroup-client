@@ -31,7 +31,8 @@ export default function sessionReducer(state = initialState, action){
     case SESSION_SUCCESS:
       return Object.assign ({}, state, {
         loading: false,
-        sessions: action.sessions
+        sessions: action.sessions,
+        error: null
       });
     case SINGLE_SESSION_SUCCESS:
       return Object.assign ({}, state, {

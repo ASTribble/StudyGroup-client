@@ -36,4 +36,14 @@ describe('It should update state', () => {
         const newState = reducer(state, action);
         expect(newState.loading).toEqual(false);
     });
+
+    it('Should set error to null on sessionSuccess', () => {
+        const state = {error: 'Everything is Rotten'};
+        const sessions = ['1', '2', '3'];
+        const action = sessionSuccess(sessions);
+
+        const newState = reducer(state, action);
+        expect(newState.error).toEqual(null);
+    });
+
 })
