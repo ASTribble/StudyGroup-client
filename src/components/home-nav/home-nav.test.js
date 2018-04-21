@@ -1,5 +1,4 @@
 import React from 'react';
-import '../setupTests';
 import { shallow } from 'enzyme';
 
 import HomeNav from './home-nav';
