@@ -1,5 +1,4 @@
 import React from 'react';
-import '../setupTests';
 import { shallow, mount } from 'enzyme';
 
 
