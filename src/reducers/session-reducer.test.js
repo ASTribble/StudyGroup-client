@@ -46,4 +46,28 @@ describe('It should update state', () => {
         expect(newState.error).toEqual(null);
     });
 
+    it('Should update detailedSession on singleSessionSuccess', () => {
+        const state = {};
+        const session = {title: 'test session'};
+        const action = singleSessionSuccess(session);
+
+        const newState = reducer(state, action);
+        expect(newState.detailedSession).toEqual(session);
+        expect(newState.detailedSession.title).toEqual('test session');
+    });
+
+    it('Should set loading and error to false on singleSessionSuccess', () => {
+        const state = {
+            loading: true, 
+            error: 'Error'
+        };
+        const session = {};
+        const action = singleSessionSuccess(session);
+
+        const newState = reducer(state, action);
+        expect(newState.loading).toEqual(false);
+        expect(newState.error).toEqual(null);
+    });
+
+
 })
