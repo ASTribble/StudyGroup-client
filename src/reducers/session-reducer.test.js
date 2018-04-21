@@ -75,6 +75,7 @@ describe ('It should create state if undefined', () => {
     it('Should set a state if state is undefined', () => {
         const state = undefined;
         const action = {type: '_UNKNOWN_ACTION'};
+       
         const newState = reducer(state, action);
         expect(newState).toHaveProperty('loading');
         expect(newState).toHaveProperty('error');
@@ -82,3 +83,13 @@ describe ('It should create state if undefined', () => {
         expect(newState).toHaveProperty('detailedSession');
     });
 });
+
+describe ('It should not alter state if action is unknown', () => {
+    it('Should return state passed in', () => {
+        const state = {title: 'Original State'};
+        const action = {type: '_UNKNOWN_ACTION'};
+
+        const newState  = reducer(state, action);
+        expect(newState).toBe(state);
+    })
+})
