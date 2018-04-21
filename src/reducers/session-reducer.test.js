@@ -7,7 +7,7 @@ import {
   } from '../actions/get-sessions';
 
 
-describe('It should update state', () => {
+describe('It should update state properly', () => {
 
     it('Should set loading to true on sessionRequest', () => {
         const state = {
@@ -68,6 +68,17 @@ describe('It should update state', () => {
         expect(newState.loading).toEqual(false);
         expect(newState.error).toEqual(null);
     });
+});
 
+describe ('It should create state if undefined', () => {
 
-})
+    it('Should set a state if state is undefined', () => {
+        const state = undefined;
+        const action = {type: '_UNKNOWN_ACTION'};
+        const newState = reducer(state, action);
+        expect(newState).toHaveProperty('loading');
+        expect(newState).toHaveProperty('error');
+        expect(newState).toHaveProperty('sessions');
+        expect(newState).toHaveProperty('detailedSession');
+    });
+});
