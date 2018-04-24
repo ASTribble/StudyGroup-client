@@ -27,7 +27,7 @@
   margin: 1em auto;
   padding-left: 1em;
   color:#ECEECD;
-  background-color:#00B7C2;
+  background-color:#ECEECD;
   border-radius: 5px;
   width: 100%;
   display: block;
@@ -49,21 +49,21 @@ a h3 {
 }
 
 a h3:hover{
-  color: #eceecd;
+  color: #00B7C2;
 }
 
 a h3:visited{
-  color: #685DB1;
+  color: #8266ff;
 }
 
 a p {
-  color: #eceecd;
+  color: #29189A;
   text-decoration: none;
   font-weight: bold;
 }
 
 a p:hover {
-  color: #29189A;
+  color: #00B7C2;
 }
 
 
