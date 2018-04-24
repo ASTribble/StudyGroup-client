@@ -19,21 +19,29 @@ main{
 form {
     margin: 1em, auto, 2em;
     padding: 2em 1em;
-    color: #ECEECD;
-    color: #fcfcf7;
-    background-color: #00B7C2;
+    background-color: #ECEECD;
     border-radius: 10px;
     width: 95%;
     display: flex;
     flex-direction: column;
+    border: 18px solid #00B7C2;
+    border-top: 24px solid #00B7C2;
+    border-bottom: 24px solid #00B7C2;
+
+}
+
+form h2 {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #29189A;
+    border-bottom: 3.5px solid #29189A;
 }
 
 section,  #name-list-div, .location-tag  {
-  background-color: #00B7C2;
+  background-color: #ECEECD;
   display: flex;
   flex-direction: column;
   margin: 1em;
-  /* padding: 0, 2em; */
   color: #29186D;
 }
 
@@ -45,11 +53,13 @@ input, select{
   font-size: 24px;
   width: 264px;
   max-width: 100%;
-  color: #29189A
+  color: #29189A;
+  border: 3px solid #00B7C2;
+  background-color: #efefef;
 }
 
 label {
-  color: #f0f2e2;
+  color: #29189A;
   font-size: 18px;
 }
 
