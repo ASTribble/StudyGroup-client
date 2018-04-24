@@ -11,37 +11,52 @@
   }
 
   input, select {
-    font-size: 24px;
+    font-size: 22px;
     background-color: rgb(236,238,205);
-    width: 264px;
-    
+    width: 264px; 
   }
 
-  .session-notes, .name-list{
+  /* .session-notes, .name-list{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-  }
+  } */
 
-  .session-note, .name-list-item{
+  /* .session-note, .name-list-item{
     padding: 0;
     font-weight: normal;
     font-size: 20px;
+  } */
+  .session-detail-list-item {
+    font-size: 20px;
+    color: #29189A;
+
   }
 
-  .notes-section, #name-list-div{
-    margin-top: 0;
+  .session-detail-section {
+    border: 18px solid #00B7C2;
+
+    
     width: 90%;
     padding: 1em;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 1em auto;
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* margin: 0;  */
+    
+      background-color: #ECEECD;
+      display: flex;
+      flex-direction: column;
+      /* margin: .5em; */
+      color: #29189A;
+  
   }
 
-  .notes-section h3, #name-list-div h3{
+  /* .notes-section h3, #name-list-div h3{
     padding-left: 1em;
     font-size: 1.3em;
-  }
+  } */
 
   .delete-button {
     max-width: 75%;
@@ -56,27 +71,48 @@
   padding: 1em 1em 0;
 }
 
+.form {
+  border: none;
+  justify-content: flex-end;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.session-detail-list{
+  padding-bottom: 5em;
+  color: #29189A;
+}
 
 @media (min-width: 700px){
 
   .notes-and-names {
     display: flex;
-    align-items: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
   }
 
-  .session-notes, .name-list{
+  /* .session-notes, .name-list{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-  }
+  } */
 
-  .session-note, .name-list-item{
+  /* .session-note, .name-list-item{
     padding: 0;
+  } */
+
+  /* .notes-section, #name-list-div{
+     width: 49%;
+  } */
+  .session-detail-list {
+    margin-left: 1em;;
   }
 
-  .notes-section, #name-list-div{
-     width: 49%;
+  .session-detail-section{
+    width: 49%;
+    margin: .5em .5em 1.5em;
   }
 
   #delete-button-div {

@@ -30,20 +30,27 @@ form {
 
 }
 
-form h2 {
+h2 {
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     color: #29189A;
-    border-bottom: 3.5px solid #29189A;
+    border-bottom: 3px solid #29189A;
 }
 
-section,  #name-list-div, .location-tag  {
+.location-tag  {
   background-color: #ECEECD;
   display: flex;
   flex-direction: column;
   margin: 1em;
   color: #29186D;
 }
+/* section, .location-tag  {
+  background-color: #ECEECD;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  color: #29186D;
+} */
 
 input, select{
   margin: 5px auto;
@@ -131,11 +138,11 @@ div, section{
   border-radius: 8px;
   margin-top: 0;
 }
-
+/* 
 .name-list, .session-notes {
   color: #29189A;
   font-weight: normal;
-}
+} */
 
 .button {
   max-width: 300px;
