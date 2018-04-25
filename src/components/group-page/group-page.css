@@ -80,6 +80,9 @@ header p {
   text-align: center;
 }
 
+/* ==== MEDIA QUERY 700px =================== */
+
+
 @media (min-width: 700px){
   
   .page {
@@ -88,8 +91,6 @@ header p {
 
   header {
     width: 97%;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 
   h1{
@@ -116,22 +117,14 @@ header p {
     padding: 2em;
   }
 
-  .add-session-form{
+  .add-session-form {
     margin-top: 0;
     padding-top: 1em;
   }
 
   .sessions-list-div {
-  margin: 0;
-  padding: 0;
-  }
-
-  .sessions-list {
+    margin: 0;
     padding: 0;
-    margin: 1em 0;
-    width: 100%;
-    position: relative;
-    top: 7.2em;
   }
 
   .session-list-item{

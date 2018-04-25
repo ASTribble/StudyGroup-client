@@ -21,15 +21,15 @@ where and when they will be out studying.
 
   #### Main Group View:
 
-  ![Group View](./src/screenshots/group-full.png)
+  ![Group View](./src/screenshots/GroupPage.png)
   
   #### Session Details View:
 
-  ![Session Details View](./src/screenshots/detail-full.png)
+  ![Session Details View](./src/screenshots/SessionDetail.png)
 
   ####  Session Details on Mobile:
 
-  ![Session Details Mobile](./src/screenshots/detail-mobile.png)
+  ![Session Details Mobile](./src/screenshots/MobileSession.png)
 
 
 ## Scenarios
