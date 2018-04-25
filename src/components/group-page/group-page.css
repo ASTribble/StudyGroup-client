@@ -5,7 +5,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.add-session-form, .sessions-list-div{
+.add-session-form, .sessions-list-div {
   margin: .5em auto;
   padding: 1em 2em 2em;
   width: 95%;
@@ -13,11 +13,20 @@
 
 .sessions-list-div {
   padding: .7em 0;
+  height: 100%;
+  max-height: 740px;
+  overflow-y: scroll;
+  border: 18px solid #29186D;
+  border-top: 24px solid #29186D;
+  border-bottom: 24px solid #29186D;
 } 
 
 .sessions-list {
   padding: 0;
-  margin: 1em auto;
+  margin: 1em 0;
+  width: 100%;
+  position: relative;
+  top: 7.2em;
 }
 
 .session-list-item{
@@ -26,17 +35,15 @@
 
 h1 {
   align-self: center;
-  text-align: center;
   padding: 0 1% 6px;
   margin: 0;
   margin-bottom: .36em;
 
   width: 98%;
 
+  text-align: center;
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
-
-
 }
 
 header {
@@ -64,15 +71,8 @@ header p {
   width: 98%;
   margin: 0;
   padding: 5px;
-  /* padding-right: 0; */
-  /* margin-right: 0; */
   font-size: 30px;
 }
-
-/* .flex{
-  display: flex;
-  justify-content: baseline;
-} */
 
 .center {
   margin-left: auto;
@@ -128,7 +128,10 @@ header p {
 
   .sessions-list {
     padding: 0;
-    margin: 1em auto;
+    margin: 1em 0;
+    width: 100%;
+    position: relative;
+    top: 7.2em;
   }
 
   .session-list-item{

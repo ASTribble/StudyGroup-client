@@ -28,7 +28,9 @@ input, select {
   color: #29189A;
   background-color: #ECEECD;
   
+  border-radius: 8px;    
   border: 18px solid #00B7C2;
+  
 }
 
 
@@ -87,7 +89,6 @@ input, select {
   }
 
   .border {
-    /* margin: 16px; */
     padding: 1em;
     border: 3px solid #EcEECD;
   }
