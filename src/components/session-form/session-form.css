@@ -8,26 +8,31 @@ html {
   margin-right: auto;
 }
 
-main{
+main {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-direction: column;
   align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 form {
-    margin: 1em, auto, 2em;
-    padding: 2em 1em;
-    background-color: #ECEECD;
-    border-radius: 10px;
-    width: 95%;
     display: flex;
     flex-direction: column;
+
+    background-color: #ECEECD;
+
+    margin: 1em, auto, 2em;
+    padding: 2em 1em;
+    width: 95%;
+   
+    border-radius: 10px;
+
     border: 18px solid #00B7C2;
     border-top: 24px solid #00B7C2;
     border-bottom: 24px solid #00B7C2;
-
 }
 
 h2 {
@@ -38,19 +43,13 @@ h2 {
 }
 
 .location-tag  {
-  background-color: #ECEECD;
   display: flex;
   flex-direction: column;
   margin: 1em;
+
+  background-color: #ECEECD;
   color: #29186D;
 }
-/* section, .location-tag  {
-  background-color: #ECEECD;
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  color: #29186D;
-} */
 
 input, select{
   margin: 5px auto;
@@ -75,44 +74,40 @@ label {
 }
 
 button {
-  background-color: #29186D;
-  color: #ECEECD;
-  /* height: 3em; */
-  font-size: 18px;
-  padding: 8px;
-  width: 264px;
   display: flex;
   justify-content: center;
   align-self: center;
+
+  padding: 8px;
+  margin: .5em auto;
+  width: 250px;
+
+  background-color: #29186D;
+
+  font-size: 18px;
+  color: #ECEECD;
+
   border-radius: 5px;
- 
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-self: space-around;
+
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-self: space-around;
-  background-color: #29186D;
-  color: #ECEECD;
-  border-radius: 10px;
+  
   width: 90%;
-}
+  background-color: #29186D;
 
-/* h3 {
-    padding-left: 1em;
-    font-size: 1.3em;
-    color: #ECEECD;
-} */
-/* header h1, header h2, header p {
-  padding-left: 12%;
-  display: flex;
-  color: #eceecd;
-} */
+  color: #ECEECD;
+
+  border-radius: 10px;  
+}
 
 #delete-button-div {
   background-color: #29186D;

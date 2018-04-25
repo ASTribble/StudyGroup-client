@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-around;
 }
-  /* #00B7C2,ECEECD,29186D,51CA3F,4752C2 */
+
 .session-list-item {
   list-style: none;
   margin: 1em auto;
@@ -47,11 +47,11 @@ a h3 {
   padding-right: 5px;
   max-width: 96%;
   font-size: 20px;
-  /* margin-top: .5em; */
   font-weight: bold;
   color: #29189A;
   border-bottom: 3px solid #29189A;
   margin-bottom: .6em;
+  transition: .2s;
 }
 
 a:visited {
@@ -60,7 +60,7 @@ a:visited {
 
 a h3:hover{
   color: #00B7C2;
-  transition: .5s;
+  transition: .2s;
 }
 
 a p {
@@ -70,12 +70,12 @@ a p {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: .6em;
-  transition: .5s;
+  transition: .2s;
 }
 
 a p:hover {
   color: #00B7C2;
-  transition: .5s;
+  transition: .2s;
 }
 
 

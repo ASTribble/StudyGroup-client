@@ -1,72 +1,44 @@
 
-  .location-tag {
-    margin: .5em auto;
-    border-radius: .5em;
-    max-width: 90%;
-    font-weight: bold;
-  }
+.location-tag {
+  margin: .5em auto;
+  border-radius: .5em;
+  max-width: 90%;
+  font-weight: bold;
+}
 
-  button { 
-    margin-top: .5em;
-    max-width: 250px;
-  }
+input, select {
+  font-size: 22px;
+  background-color: rgb(236,238,205);
+  width: 264px; 
+}
 
-  input, select {
-    font-size: 22px;
-    background-color: rgb(236,238,205);
-    width: 264px; 
-  }
+.session-detail-list-item {
+  font-size: 20px;
+  color: #29189A;
+}
 
-  /* .session-notes, .name-list{
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  } */
+.session-detail-section {
+  display: flex;
+  flex-direction: column;
 
-  /* .session-note, .name-list-item{
-    padding: 0;
-    font-weight: normal;
-    font-size: 20px;
-  } */
-  .session-detail-list-item {
-    font-size: 20px;
-    color: #29189A;
-
-  }
-
-  .session-detail-section {
-    border: 18px solid #00B7C2;
-
-    
-    width: 90%;
-    padding: 1em;
-    margin: 1em auto;
-    /* margin-right: auto;
-    margin-left: auto; */
-    /* margin: 0;  */
-    
-      background-color: #ECEECD;
-      display: flex;
-      flex-direction: column;
-      /* margin: .5em; */
-      color: #29189A;
+  margin: 1em auto;
+  padding: 1em;
+  width: 90%;
   
-  }
+  color: #29189A;
+  background-color: #ECEECD;
+  
+  border: 18px solid #00B7C2;
+}
 
-  /* .notes-section h3, #name-list-div h3{
-    padding-left: 1em;
-    font-size: 1.3em;
-  } */
+.delete-button {
+  max-width: 75%;
+}
 
-  .delete-button {
-    max-width: 75%;
-  }
-
-  #delete-button-div {
-    width: 90%;
-    margin: 1em auto;
-  }
+#delete-button-div {
+  width: 90%;
+  margin: 1em auto;
+}
 
 #home-nav {
   padding: 1em 1em 0;
@@ -94,20 +66,6 @@
     justify-content: space-between;
   }
 
-  /* .session-notes, .name-list{
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  } */
-
-  /* .session-note, .name-list-item{
-    padding: 0;
-  } */
-
-  /* .notes-section, #name-list-div{
-     width: 49%;
-  } */
   .session-detail-list {
     margin-left: 1em;;
   }
