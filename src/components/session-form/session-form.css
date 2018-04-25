@@ -8,32 +8,46 @@ html {
   margin-right: auto;
 }
 
-main{
+main {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-direction: column;
   align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 form {
-    margin: 1em, auto, 2em;
-    padding: 2em 1em;
-    color: #ECEECD;
-    color: #fcfcf7;
-    background-color: #00B7C2;
-    border-radius: 10px;
-    width: 95%;
     display: flex;
     flex-direction: column;
+
+    background-color: #ECEECD;
+
+    margin: 1em, auto, 2em;
+    padding: 2em 1em;
+    width: 95%;
+   
+    border-radius: 10px;
+
+    border: 18px solid #00B7C2;
+    border-top: 24px solid #00B7C2;
+    border-bottom: 24px solid #00B7C2;
 }
 
-section,  #name-list-div, .location-tag  {
-  background-color: #00B7C2;
+h2 {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #29189A;
+    border-bottom: 3px solid #29189A;
+}
+
+.location-tag  {
   display: flex;
   flex-direction: column;
   margin: 1em;
-  /* padding: 0, 2em; */
+
+  background-color: #ECEECD;
   color: #29186D;
 }
 
@@ -45,11 +59,13 @@ input, select{
   font-size: 24px;
   width: 264px;
   max-width: 100%;
-  color: #29189A
+  color: #29189A;
+  border: 3px solid #00B7C2;
+  background-color: #efefef;
 }
 
 label {
-  color: #f0f2e2;
+  color: #29189A;
   font-size: 18px;
 }
 
@@ -58,44 +74,24 @@ label {
 }
 
 button {
-  background-color: #29186D;
-  color: #ECEECD;
-  /* height: 3em; */
-  font-size: 18px;
-  padding: 8px;
-  width: 264px;
   display: flex;
   justify-content: center;
   align-self: center;
-  border-radius: 5px;
- 
-}
 
-header {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-self: space-around;
+  padding: 8px;
+  margin: .5em auto;
+  width: 264px;
+  max-width: 100%;
+
   background-color: #29186D;
+
+  font-size: 18px;
   color: #ECEECD;
-  border-radius: 10px;
-  width: 90%;
+
+  border-radius: 5px;
 }
 
-/* h3 {
-    padding-left: 1em;
-    font-size: 1.3em;
-    color: #ECEECD;
-} */
-/* header h1, header h2, header p {
-  padding-left: 12%;
-  display: flex;
-  color: #eceecd;
-} */
+
 
 #delete-button-div {
   background-color: #29186D;
@@ -103,10 +99,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  border-radius: 8px;
 }
 
 .delete-button {
   background-color: #00B7C2;
+  background-color: #ECEECD;
+  color: #29186D;
+  border: 6px solid #00B7C2;
 }
 
 .location-tag{
@@ -117,15 +117,15 @@ header {
   padding: .5em;
 }
 
-div, section{
+/* div, section{
   border-radius: 8px;
   margin-top: 0;
-}
-
+} */
+/* 
 .name-list, .session-notes {
   color: #29189A;
   font-weight: normal;
-}
+} */
 
 .button {
   max-width: 300px;

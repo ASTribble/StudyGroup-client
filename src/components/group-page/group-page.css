@@ -5,7 +5,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.add-session-form, .sessions-list-div{
+.add-session-form, .sessions-list-div {
   margin: .5em auto;
   padding: 1em 2em 2em;
   width: 95%;
@@ -13,61 +13,75 @@
 
 .sessions-list-div {
   padding: .7em 0;
+  height: 100%;
+  max-height: 740px;
+  overflow-y: scroll;
+  border: 18px solid #29186D;
+  border-top: 24px solid #29186D;
+  border-bottom: 24px solid #29186D;
 } 
 
 .sessions-list {
   padding: 0;
-  margin: 1em auto;
+  margin: 1em 0;
+  width: 100%;
+  position: relative;
+  top: 7.2em;
 }
 
 .session-list-item{
   margin: .5em auto;
 }
 
-header h1 {
-  font-size: 48px;
-  padding: 0;
+h1 {
+  align-self: center;
+  padding: 0 1% 6px;
   margin: 0;
   margin-bottom: .36em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  font-stretch: 1.5;
-}
 
-h2, h3 {
-  margin-top: 5px;
+  width: 98%;
+
+  text-align: center;
+  font-size: 48px;
   font-family: 'Roboto', sans-serif;
-  color: #F0F2E2;
-  border-bottom: 2px solid #f0f2e2 ;
 }
 
 header {
-  margin-bottom: 24px;
-  padding: 24px 6px;
-  text-align: center;
-  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-self: center;
+
+  padding: 18px 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+  width: 90%;
+  background-color: #29186D;
+
+  color: #ECEECD;
+
+  border-radius: 10px;  
 }
 
 header p {
   text-align: center;
+  width: 98%;
   margin: 0;
   padding: 5px;
-  font-size: 24px;
-}
-
-.flex{
-  display: flex;
-  justify-content: baseline;
+  font-size: 30px;
 }
 
 .center {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
+
+/* ==== MEDIA QUERY 700px =================== */
+
 
 @media (min-width: 700px){
   
@@ -77,9 +91,18 @@ header p {
 
   header {
     width: 97%;
-    margin-left: auto;
-    margin-right: auto;
   }
+
+  h1{
+    text-align: left;
+    border-bottom: 3px solid #ECEECD;
+  }
+
+  header p{
+    text-align: right;
+
+  }
+
   main {
     display: flex;
     flex-direction: row;
@@ -94,19 +117,14 @@ header p {
     padding: 2em;
   }
 
-  .add-session-form{
+  .add-session-form {
     margin-top: 0;
     padding-top: 1em;
   }
 
   .sessions-list-div {
-  margin: 0;
-  padding: 0;
-  }
-
-  .sessions-list {
+    margin: 0;
     padding: 0;
-    margin: 1em auto;
   }
 
   .session-list-item{

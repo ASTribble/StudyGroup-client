@@ -43,7 +43,7 @@ export class SessionForm extends React.Component {
             name='date'
             id='date'
             validate={[required, notEmpty]}
-            label='Date of Session'
+            label='Date of Session:'
           />
 
           <Field
@@ -54,7 +54,7 @@ export class SessionForm extends React.Component {
             id='start-time'
             placeholder= '3:15 pm'
             validate={[required, notEmpty]}
-            label='Start Time'
+            label='Start Time:'
           />
 
           <Field
@@ -65,7 +65,7 @@ export class SessionForm extends React.Component {
             id='end-time'
             placeholder='5:00 pm'
             validate={[required, notEmpty]}
-            label='End Time'
+            label='End Time:'
           />
         </section>
         <section className='Location'>
@@ -76,7 +76,7 @@ export class SessionForm extends React.Component {
           name='location'
           id='location'
           validate={[required, notEmpty]}
-          label='Location'
+          label='Location:'
         />
        </section> 
       <section className= 'notes'>
@@ -87,7 +87,7 @@ export class SessionForm extends React.Component {
           name='notes1'
           id='session-notes'
           validate={[]}
-          label='Notes'
+          label='Note:'
         />
 
         <Field
@@ -97,7 +97,7 @@ export class SessionForm extends React.Component {
           name='notes2'
           id='session-notes-2'
           validate={[]}
-          label='Notes'
+          label='Note:'
         />
 
         <Field
@@ -107,7 +107,7 @@ export class SessionForm extends React.Component {
           name='notes3'
           id='session-notes-3'
           validate={[]}
-          label='Notes'
+          label='Note:'
         />
         </section>
         <button disabled={this.props.pristine || this.props.submitting} onClick={() => null}>

@@ -7,13 +7,13 @@ import DeleteNameForm from './delete-name-form';
 export function NameList (props){
 
     const nameList = props.names.map((name, index) => {
-        return <li key={index} className='name-list-item'>{name}</li>
+        return <li key={index} className='name-list-item session-detail-list-item'>{name}</li>
     });
 
     return (
-        <div id='name-list-div'>
-            <h3>Attendees:</h3>
-            <ul className='name-list' aria-live='assertive'> 
+        <div id='name-list-div' className='session-detail-section'>
+            <h2>Attendees</h2>
+            <ul className='name-list session-detail-list' aria-live='assertive'> 
                 {nameList}
             </ul>  
             <AddNameForm />
