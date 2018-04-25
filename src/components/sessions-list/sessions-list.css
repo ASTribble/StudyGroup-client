@@ -2,37 +2,6 @@
   box-sizing: border-box;
 }
 
-.sessions-list-div {
-  background-color: #29186D;
-  color:#ECEECD;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: space-around;
-  border-radius: 10px;
-}
-
-.sessions-list {
-  list-style: none;
-  width:90%;
-  margin: 1em, auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.session-list-item {
-  list-style: none;
-  margin: 1em auto;
-  padding-left: 1em;
-  padding-bottom: .5em;
-  background-color:#ECEECD;
-  border-radius: 5px;
-  width: 100%;
-  display: block;
-  border:3.6px solid #00B7C2;
-}
 
 a {
   text-decoration: none;
@@ -65,7 +34,6 @@ a h3:hover{
 
 a p {
   color: #29189A;
-  /* text-decoration: none; */
   font-size: 18px;
   font-weight: bold;
   margin-top: 0;
