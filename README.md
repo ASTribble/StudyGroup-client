@@ -13,8 +13,8 @@ where and when they will be out studying.
   https://study-group.netlify.com/
 
 #### Link to Repos:
-  client: https://github.com/thinkful-ei17/scott-study-group-client   
-  server: https://github.com/thinkful-ei17/scott-study-group-server
+  client: https://github.com/ASTribble/StudyGroup-client   
+  server: https://github.com/ASTribble/StudyGroup-server
 
 
 ## Screenshots:
