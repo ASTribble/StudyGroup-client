@@ -90,24 +90,7 @@ button {
   border-radius: 5px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-self: space-around;
 
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  
-  width: 90%;
-  background-color: #29186D;
-
-  color: #ECEECD;
-
-  border-radius: 10px;  
-}
 
 #delete-button-div {
   background-color: #29186D;
@@ -119,6 +102,9 @@ header {
 
 .delete-button {
   background-color: #00B7C2;
+  background-color: #ECEECD;
+  color: #29186D;
+  border: 6px solid #00B7C2;
 }
 
 .location-tag{

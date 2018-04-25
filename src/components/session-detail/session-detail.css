@@ -22,7 +22,7 @@ input, select {
   flex-direction: column;
 
   margin: 1em auto;
-  padding: 1em;
+  padding: 1em 12px;
   width: 90%;
   
   color: #29189A;
@@ -31,9 +31,6 @@ input, select {
   border: 18px solid #00B7C2;
 }
 
-.delete-button {
-  max-width: 75%;
-}
 
 #delete-button-div {
   width: 90%;
@@ -49,12 +46,20 @@ input, select {
   border: none;
   justify-content: flex-end;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .session-detail-list{
   padding-bottom: 5em;
   color: #29189A;
+}
+
+.no-border {
+  border: none;
 }
 
 @media (min-width: 700px){
@@ -73,11 +78,18 @@ input, select {
   .session-detail-section{
     width: 49%;
     margin: .5em .5em 1.5em;
+    padding: 1em;
   }
 
   #delete-button-div {
     width: 95%;
     margin: 0 auto;
+  }
+
+  .border {
+    /* margin: 16px; */
+    padding: 1em;
+    border: 3px solid #EcEECD;
   }
 
 }

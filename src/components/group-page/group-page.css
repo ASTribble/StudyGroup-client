@@ -24,50 +24,60 @@
   margin: .5em auto;
 }
 
-header h1 {
-  font-size: 48px;
-  padding: 0;
+h1 {
+  align-self: center;
+  text-align: center;
+  padding: 0 1% 6px;
   margin: 0;
   margin-bottom: .36em;
+
+  width: 98%;
+
+  font-size: 48px;
   font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  font-stretch: 1.5;
+
+
 }
 
-/* h2, h3 {
-  margin-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  color: #F0F2E2;
-  border-bottom: 2px solid #f0f2e2 ;
-} */
-
-
 header {
-  margin-bottom: 24px;
-  padding: 24px 6px;
-  text-align: center;
-  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-self: center;
+
+  padding: 18px 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+  width: 90%;
+  background-color: #29186D;
+
+  color: #ECEECD;
+
+  border-radius: 10px;  
 }
 
 header p {
   text-align: center;
+  width: 98%;
   margin: 0;
   padding: 5px;
-  font-size: 24px;
+  /* padding-right: 0; */
+  /* margin-right: 0; */
+  font-size: 30px;
 }
 
-.flex{
+/* .flex{
   display: flex;
   justify-content: baseline;
-}
+} */
 
 .center {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 @media (min-width: 700px){
@@ -78,9 +88,20 @@ header p {
 
   header {
     width: 97%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
+
+  h1{
+    text-align: left;
+    border-bottom: 3px solid #ECEECD;
+  }
+
+  header p{
+    text-align: right;
+
+  }
+
   main {
     display: flex;
     flex-direction: row;

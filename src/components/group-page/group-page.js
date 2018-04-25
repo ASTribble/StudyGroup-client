@@ -23,9 +23,9 @@ export class GroupPage extends React.Component{
       return (
         <div className='page'>  
           <header role='banner'>
-            <h1 className='flex center'>Study Group</h1>
-            <div className='flex center'>
-              <p className='center'>
+            <h1 className='flex'>Study Group</h1>
+            <div className='flex'>
+              <p>
                 Join a Session or Add Your Own!
               </p>
             </div>
