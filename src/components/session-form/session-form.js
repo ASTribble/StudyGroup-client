@@ -1,10 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Input from './input';
+
+import DatePicker from './date-picker';
+import 'react-datepicker/dist/react-datepicker.css';
+import moment from 'moment';
+
 import {Field, reduxForm} from 'redux-form';
 import {addSession} from '../../actions/add-session';
 import {required, notEmpty} from '../validators';
 import './session-form.css';
+import { isMoment } from 'moment';
 
 
 export class SessionForm extends React.Component {
@@ -15,6 +21,7 @@ export class SessionForm extends React.Component {
   }
 
   render(){
+    let date;
     return (
       <form 
         className='add-session-form' 
@@ -36,7 +43,7 @@ export class SessionForm extends React.Component {
         />
         </section>
         <section className='date-time'>
-          <Field
+          {/* <Field
             component={Input}
             element='input'
             type='date'
@@ -44,9 +51,19 @@ export class SessionForm extends React.Component {
             id='date'
             validate={[required, notEmpty]}
             label='Date of Session:'
+          /> */}
+          <label htmlFor='start-time'>
+          Start Time:
+          </label>
+          <Field
+            component={DatePicker}
+            type='date'
+            name='start'
+            id='start-time'
+            label='Start of Session:'
           />
 
-          <Field
+          {/* <Field
             component={Input}
             element='input'
             type='text'
@@ -55,7 +72,7 @@ export class SessionForm extends React.Component {
             placeholder= '3:15 pm'
             validate={[required, notEmpty]}
             label='Start Time:'
-          />
+          /> */}
 
           <Field
             component={Input}
