@@ -6,8 +6,8 @@ import {firstLetterToUppercase, filterUndefinedNotes, makeTime} from './helper-f
 
 const addSessionAPI = values => {
 
-    const startTime = moment(`${values.date} ${makeTime(values.start)}`).format();
-    const endTime = moment(`${values.date} ${makeTime(values.end)}`).format();
+    const startTime = moment(values.start).format();
+    const endTime = moment(values.end).format();
     const notes = filterUndefinedNotes([values.notes1, values.notes2, values.notes3]);
 
     const newSession = {

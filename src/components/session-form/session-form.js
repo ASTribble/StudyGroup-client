@@ -16,6 +16,7 @@ import { isMoment } from 'moment';
 export class SessionForm extends React.Component {
   
   onSubmit(values){
+    // console.log('form values:', values);
     this.props.dispatch(addSession(values));
     this.props.reset();
   }
@@ -53,7 +54,7 @@ export class SessionForm extends React.Component {
             label='Date of Session:'
           /> */}
           <label htmlFor='start-time'>
-          Start Time:
+            Start Time:
           </label>
           <Field
             component={DatePicker}
@@ -61,6 +62,7 @@ export class SessionForm extends React.Component {
             name='start'
             id='start-time'
             label='Start of Session:'
+            // validate={[required, notEmpty]}
           />
 
           {/* <Field
@@ -74,7 +76,7 @@ export class SessionForm extends React.Component {
             label='Start Time:'
           /> */}
 
-          <Field
+          {/* <Field
             component={Input}
             element='input'
             type='text'
@@ -83,7 +85,20 @@ export class SessionForm extends React.Component {
             placeholder='5:00 pm'
             validate={[required, notEmpty]}
             label='End Time:'
+          /> */}
+          <label forhtml='end-time'>
+            End Time:
+          </label>
+
+          <Field
+            component={DatePicker}
+            element='input'
+            type='text'
+            name='end'
+            id='end-time'
+            // validate={[required, notEmpty]}
           />
+
         </section>
         <section className='Location'>
         <Field
