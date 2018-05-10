@@ -16,18 +16,6 @@ input {
   justify-content: center;
   max-width: 100%;
 }
-/*
-.react-datepicker__input-container :first-child
-:first-child {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  justify-content: center;
-} */
-
-div.react-datepicker-popper {
-  left:-50px;
-}
 
 div.date-picker-div {
   display: flex;
@@ -35,18 +23,17 @@ div.date-picker-div {
   justify-content: center;
 }
 
-div.date-picker-div:first-child {
+.date-picker-div div:first-of-type {
   max-width: 100%;
 }
-.react-datepicker-wrapper{
+
+.react-datepicker-wrapper {
   max-width: 100%;
 } 
 
+@media(max-width: 380px){
+  .react-datepicker {
+    left: -44px;
+  }
+}
 
-
-/* <div style="
-    display:  flex;
-    /* flex-direction: row; */
-    /* width: 100%;
-    justify-content:  center;
-"><div class="react-datepicker-wrapper"><div class="react-datepicker__input-container"><input type="text" value="" name="start" class=""></div></div></div> */ 
