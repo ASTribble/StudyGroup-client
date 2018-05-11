@@ -15,8 +15,8 @@ const renderDatePicker = ({ input, placeholder, defaultValue, meta: { touched, e
       timeIntervals={15}
       dateFormat='lll'
       timeCaption='Time' />
-    {/* {touched && error && <span>{error}</span>} */}
-    {touched && error}
+    {touched && error && <span>{error}</span>}
+    {/* {touched && error} */}
   </div>
   )  
 };

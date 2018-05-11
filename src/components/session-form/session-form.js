@@ -62,7 +62,7 @@ export class SessionForm extends React.Component {
             name='start'
             id='start-time'
             label='Start of Session:'
-            // validate={[required, notEmpty]}
+            validate={[required]}
           />
 
           {/* <Field
@@ -96,7 +96,7 @@ export class SessionForm extends React.Component {
             type='text'
             name='end'
             id='end-time'
-            // validate={[required, notEmpty]}
+            validate={[required]}
           />
 
         </section>
